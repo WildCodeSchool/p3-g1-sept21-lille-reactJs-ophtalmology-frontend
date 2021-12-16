@@ -1,5 +1,17 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Header from './components/Header';
+
 function App() {
-  return <h1>Hello there!</h1>;
+  return (
+    <>
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route to="/" />
+        </Routes>
+      </BrowserRouter>
+    </>
+  );
 }
 
 export default App;
