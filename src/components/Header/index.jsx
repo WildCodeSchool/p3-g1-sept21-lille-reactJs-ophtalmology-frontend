@@ -1,12 +1,12 @@
 import { NavLink } from 'react-router-dom';
 import DrJeannerotLogo from '../../assets/DrJeannerotLogo.png';
-// import { StyleHeader } from './style.jsx';
+import SHeader from './style';
 
 function Header() {
   return (
-    <>
+    <SHeader>
       <div className="header">
-        <div className="headerLogoCat">
+        <div className="headerLogoContainer">
           <NavLink to="/">
             <img
               src={DrJeannerotLogo}
@@ -15,6 +15,7 @@ function Header() {
             />
           </NavLink>
         </div>
+
         <div className="headerCatContainer">
           <NavLink to="/contact" className="headerCat">
             <p>Contact</p>
@@ -30,7 +31,7 @@ function Header() {
           </a>
         </div>
       </div>
-    </>
+    </SHeader>
   );
 }
 

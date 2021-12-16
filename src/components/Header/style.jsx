@@ -1,61 +1,84 @@
-// import styled from 'styled-components';
+import styled from 'styled-components';
 
-// .header {
-//   width: 100%;
-//   background-color: #0081c9;
-//   display: flex;
-//   flex-flow: row nowrap;
-//   border: 2px dotted orange;
-// }
+const SHeader = styled.div`
+  .header {
+    width: 100%;
+    height: 125px;
+    background-color: var(--mColor);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row;
+    padding: 2px;
+  }
 
-// .headerLogoCat {
-//   height: 100px;
-//   width: 200px;
-//   border: 2px dotted yellowgreen;
-// }
+  .headerLogoContainer {
+    height: 100px;
+    width: 200px;
+    display: flex;
+    background-color: #fff;
+  }
 
-// .headerLogo {
-//   width: 100%;
-// }
+  .headerLogo {
+    width: 100%;
+  }
 
-// .headerCatContainer {
-//   width: 30vh;
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-//   flex-flow: row;
-//   border: 2px dotted red;
-// }
+  .headerCatContainer {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100px;
+  }
 
-// .headerCat {
-//   color: black;
-//   background-color: lightgrey;
-//   width: 30vh;
-//   height: 50px;
-//   text-decoration: none;
-//   border: 2px dotted blueviolet;
-// }
+  .headerCat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: var(--mColor);
+    color: #fff;
+    margin: 5px;
+    width: 35vw;
+    height: 50px;
+    text-decoration: none;
+  }
 
-// @media only screen and (min-width: 700px) {
-//   .header {
-//     width: 100%;
-//     background-color: #fff;
-//     display: flex;
-//     justify-content: space-between;
-//     border-bottom: 1px solid black;
-//   }
+  @media only screen and (min-width: 700px) {
+    .header {
+      height: 100px;
+      width: 100%;
+      background-color: #fff;
+      display: flex;
+      justify-content: space-between;
+      /* the border-bottom will be deleted later */
+      border-bottom: 1px solid black;
+    }
 
-//   .headerCatContainer {
-//     background-color: #fff;
-//     width: 50vh;
-//     display: flex;
-//     justify-content: flex-end;
-//   }
+    .headerLogoContainer {
+      margin: 10px 10px 10px 175px;
+    }
 
-//   .headerCatContainer a {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     width: 20vh;
-//   }
-// }
+    .headerCatContainer {
+      width: 50vw;
+      margin: 10px 150px 10px 10px;
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: row;
+    }
+
+    .headerCatContainer a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .headerCat {
+      background-color: #fff;
+      color: #000;
+      font-size: 20px;
+      width: 8vw;
+    }
+  }
+`;
+
+export default SHeader;

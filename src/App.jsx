@@ -1,5 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
+import './reset.css';
+import './App.css';
 
 function App() {
   return (
@@ -8,6 +10,7 @@ function App() {
         <Header />
         <Routes>
           <Route to="/" />
+          <Route to="/contact" />
         </Routes>
       </BrowserRouter>
     </>
