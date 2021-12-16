@@ -3,7 +3,7 @@ import SFormContact from './style';
 
 export default function ContactForm() {
   const [form, setForm] = useState({
-    name: '',
+    lastname: '',
     firstname: '',
     email: '',
     message: '',
@@ -18,9 +18,9 @@ export default function ContactForm() {
 
   return (
     <SFormContact id="myForm">
-      <label htmlFor="name">
+      <label htmlFor="lastname">
         Nom :
-        <input type="text" name="name" onChange={handleChange} />
+        <input type="text" name="lastname" onChange={handleChange} />
       </label>
       <label htmlFor="firstname">
         Prénom :
@@ -28,11 +28,11 @@ export default function ContactForm() {
       </label>
       <label htmlFor="email">
         Email :
-        <input type="text" name="email" onChange={handleChange} />
+        <input type="email" name="email" onChange={handleChange} />
       </label>
       <label htmlFor="message">
         Message :
-        <textarea id="msg" name="message" onChange={handleChange} />
+        <textarea name="message" onChange={handleChange} />
       </label>
       <input className="button" type="submit" value="Envoyer !" />
     </SFormContact>
