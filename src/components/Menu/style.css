@@ -13,6 +13,7 @@
 .menu {
   background-color: var(--mColor);
   font-family: var(--mFont);
+  height: 52px;
   color: white;
   font-size: 20px;
   display: flex;
@@ -28,13 +29,9 @@ ul {
   background-color: var(--mColor);
 }
 
-li {
-  float: left;
-}
-
 li a,
-.dropBtn {
-  display: inline-block;
+.dropContent {
+  display: flex;
   color: white;
   text-align: center;
   padding: 14px 16px;
@@ -42,7 +39,7 @@ li a,
 }
 
 li a:hover,
-.dropDown:hover .dropBtn {
+.dropDown:hover .dropContent {
   background-color: white;
   color: black;
 }
@@ -53,6 +50,7 @@ li.dropDown {
 
 .dropDownContent {
   color: black;
+  margin-top: 5px;
   padding-left: 10px;
   padding-right: 10px;
   display: none;
@@ -60,7 +58,6 @@ li.dropDown {
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  z-index: 1;
 }
 
 .dropDownContent a {
