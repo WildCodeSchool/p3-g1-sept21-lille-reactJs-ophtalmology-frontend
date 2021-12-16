@@ -3,9 +3,9 @@ import './style.css';
 export default function Menu() {
   return (
     <div className="menu">
-      <div className="dropdown">
-        <div className="dropbtn">Glaucome</div>
-        <div className="dropdown-content">
+      <div className="dropDown">
+        <div className="dropBtn">Glaucome</div>
+        <div className="dropDownContent">
           <p>3.1 Les différents types de glaucome</p>
           <p>3.2 Les signes du glaucome</p>
           <p>3.2.1 Quels sont les facteurs de risques ?</p>
@@ -18,17 +18,17 @@ export default function Menu() {
         </div>
       </div>
 
-      <div className="dropdown">
-        <div className="dropbtn">Cataracte</div>
-        <div className="dropdown-content">
+      <div className="dropDown">
+        <div className="dropBtn">Cataracte</div>
+        <div className="dropDownContent">
           <p>L’implant : Les implants multifocaux</p>
           <p>La cataracte secondaire</p>
         </div>
       </div>
 
-      <div className="dropdown">
-        <div className="dropbtn">Chirurgie rétractive</div>
-        <div className="dropdown-content">
+      <div className="dropDown">
+        <div className="dropBtn">Chirurgie rétractive</div>
+        <div className="dropDownContent">
           <p>Quels sont les défauts de vision corrigés ?</p>
           <p>Comment se déroule l’opération ?</p>
           <p>Combien de temps dure la procédure ?</p>
@@ -39,9 +39,9 @@ export default function Menu() {
         </div>
       </div>
 
-      <div className="dropdown">
-        <div className="dropbtn">À propos</div>
-        <div className="dropdown-content">
+      <div className="dropDown">
+        <div className="dropBtn">À propos</div>
+        <div className="dropDownContent">
           <p>Présentation</p>
           <p>Actualités</p>
           <p>Informations pratiques</p>
