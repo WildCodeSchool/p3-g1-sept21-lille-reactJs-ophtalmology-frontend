@@ -4,7 +4,7 @@ export default function Menu() {
   return (
     <div className="menu">
       <div className="dropDown">
-        <div className="dropBtn">Glaucome</div>
+        <div className="dropContent">Glaucome</div>
         <div className="dropDownContent">
           <p>3.1 Les différents types de glaucome</p>
           <p>3.2 Les signes du glaucome</p>
@@ -19,7 +19,7 @@ export default function Menu() {
       </div>
 
       <div className="dropDown">
-        <div className="dropBtn">Cataracte</div>
+        <div className="dropContent">Cataracte</div>
         <div className="dropDownContent">
           <p>L’implant : Les implants multifocaux</p>
           <p>La cataracte secondaire</p>
@@ -27,7 +27,7 @@ export default function Menu() {
       </div>
 
       <div className="dropDown">
-        <div className="dropBtn">Chirurgie rétractive</div>
+        <div className="dropContent">Chirurgie rétractive</div>
         <div className="dropDownContent">
           <p>Quels sont les défauts de vision corrigés ?</p>
           <p>Comment se déroule l’opération ?</p>
@@ -40,7 +40,7 @@ export default function Menu() {
       </div>
 
       <div className="dropDown">
-        <div className="dropBtn">À propos</div>
+        <div className="dropContent">À propos</div>
         <div className="dropDownContent">
           <p>Présentation</p>
           <p>Actualités</p>
