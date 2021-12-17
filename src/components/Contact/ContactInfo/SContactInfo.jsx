@@ -2,16 +2,18 @@ import styled from 'styled-components';
 
 const SContactInfo = styled.div`
   color: white;
-
   display: flex;
   justify-content: space-around;
+  width: 100%;
 
   section {
+    background-color: var(--color);
     display: flex;
-    background-color: #0081c9;
     flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
     width: 22vw;
+    height: 29vh;
     padding: 2em;
     margin-top: 2em;
     box-shadow: inset -1px 3px 8px 5px #1f87ff, 2px 5px 16px 0px #0b325e,
@@ -27,26 +29,12 @@ const SContactInfo = styled.div`
   }
 
   img {
-    width: 75px;
+    width: 5vw;
   }
 
   a {
     text-decoration: none;
-  }
-
-  @media screen and (max-width: 750px) {
     color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  section {
-    flex-direction: column;
-    align-items: center;
-    width: 75%;
-    height: auto;
-    margin: 2.5vh;
   }
 `;
 
