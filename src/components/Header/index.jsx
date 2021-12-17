@@ -5,7 +5,7 @@ import SHeader from './style';
 function Header() {
   return (
     <SHeader>
-      <div className="header">
+      <header className="header">
         <div className="headerLogoContainer">
           <NavLink to="/">
             <img
@@ -30,7 +30,7 @@ function Header() {
             Doctolib
           </a>
         </div>
-      </div>
+      </header>
     </SHeader>
   );
 }
