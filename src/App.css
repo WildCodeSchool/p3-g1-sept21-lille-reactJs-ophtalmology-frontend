@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Gotham Rounded';
+  src: url('./fonts/GothamRnd-Book.otf') format('truetype');
+}
+
+:root {
+  --mColor: rgb(0, 155, 221);
+  --mFont: 'Gotham Rounded', sans-serif;
+
+  font-family: var(--mFont);
+}
