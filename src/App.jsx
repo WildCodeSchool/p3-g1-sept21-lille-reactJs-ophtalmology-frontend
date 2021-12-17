@@ -1,5 +1,7 @@
+import ContactInfos from 'components/Contact/ContactInfo';
+
 function App() {
-  return <h1>Hello there!</h1>;
+  return <ContactInfos />;
 }
 
 export default App;
