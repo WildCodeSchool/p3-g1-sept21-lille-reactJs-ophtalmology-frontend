@@ -1,15 +1,3 @@
-@font-face {
-  font-family: "GothamRnd-Book";
-  src:
-    local("GothamRnd-Book"),
-    url("./GothamRnd-Book.otf");
-}
-
-:root {
-  --mColor: #0081c9;
-  --mFont: "GothamRnd-Book";
-}
-
 .menu {
   background-color: var(--mColor);
   font-family: var(--mFont);
