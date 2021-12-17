@@ -6,6 +6,7 @@ const SFormContact = styled.form`
   padding: 5px;
   width: 30vw;
   border: 2px solid var(--mColor);
+
   border-radius: 5px;
 
   label {
@@ -17,6 +18,7 @@ const SFormContact = styled.form`
       height: 2vw;
       border-radius: 5px;
       border: 2px solid var(--mColor);
+
     }
     textarea {
       margin: 5px;
