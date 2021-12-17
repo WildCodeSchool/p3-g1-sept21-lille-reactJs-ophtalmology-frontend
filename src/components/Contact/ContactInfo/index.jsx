@@ -5,7 +5,7 @@ function ContactInfos() {
     <SContactInfo>
       <section>
         <img
-          src="https://img.icons8.com/ios-filled/100/000000/address--v1.png"
+          src="https://img.icons8.com/ios-filled/100/ffffff/address--v1.png"
           alt="adresse"
         />
         <h2>Adresse</h2>
@@ -23,7 +23,7 @@ function ContactInfos() {
 
       <section>
         <img
-          src="https://img.icons8.com/ios-filled/100/000000/email.png"
+          src="https://img.icons8.com/ios-filled/100/ffffff/email.png"
           alt="Email"
         />
         <h2>Adresse mail</h2>
@@ -35,7 +35,7 @@ function ContactInfos() {
 
       <section>
         <img
-          src="https://img.icons8.com/ios-filled/100/000000/phone.png"
+          src="https://img.icons8.com/ios-filled/100/ffffff/phone.png"
           alt="Téléphone"
         />
         <h2>Téléphone</h2>
