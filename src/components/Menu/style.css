@@ -29,7 +29,6 @@ ul {
   background-color: var(--mColor);
 }
 
-li a,
 .dropContent {
   display: flex;
   color: white;
@@ -38,14 +37,13 @@ li a,
   text-decoration: none;
 }
 
-li a:hover,
 .dropDown:hover .dropContent {
   background-color: white;
   color: black;
 }
 
 li.dropDown {
-  display: inline-block;
+  display: flex;
 }
 
 .dropDownContent {
@@ -60,7 +58,7 @@ li.dropDown {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-.dropDownContent a {
+.dropDownContent > li {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
