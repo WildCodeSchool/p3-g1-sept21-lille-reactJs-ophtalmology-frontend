@@ -2,7 +2,7 @@ import './style.css';
 
 export default function Menu() {
   return (
-    <div className="menu">
+    <nav className="menu">
       <div className="dropDown">
         <div className="dropContent">Glaucome</div>
         <ul className="dropDownContent">
@@ -50,6 +50,6 @@ export default function Menu() {
           <li>FAQ générale</li>
         </ul>
       </div>
-    </div>
+    </nav>
   );
 }
