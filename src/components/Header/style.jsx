@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const SHeader = styled.div`
+const SHeader = styled.header`
   .header {
     width: 100%;
     height: 125px;
