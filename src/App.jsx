@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
+import Contact from './components/Contact';
 import './reset.css';
 import './App.css';
-import Contact from './components/Contact';
 
 function App() {
   return (

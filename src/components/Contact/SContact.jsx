@@ -7,7 +7,7 @@ const SContact = styled.div`
   justify-content: space-evenly;
   align-items: center;
 
-  & & <* {
+  & > * {
     margin: 20px;
   }
 `;
