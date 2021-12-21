@@ -18,8 +18,6 @@ const SContactInfo = styled.div`
     margin-top: 2em;
     box-shadow: inset -1px 3px 8px 5px #1f87ff, 2px 5px 16px 0px #0b325e,
       50px 5px 0px 5px rgba(0, 0, 0, 0);
-    box-shadow: inset -1px 3px 8px 5px #1f87ff, 2px 5px 16px 0px #0b325e,
-      50px 5px 0px 5px rgba(0, 0, 0, 0);
     background: #0081c9;
   }
 
