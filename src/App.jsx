@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import './reset.css';
 import './App.css';
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
         <Header />
         <Routes>
           <Route to="/" />
-          <Route to="/contact" />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </BrowserRouter>
     </>

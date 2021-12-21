@@ -18,7 +18,6 @@ const SFormContact = styled.form`
       height: 2vw;
       border-radius: 5px;
       border: 2px solid var(--mColor);
-
     }
     textarea {
       margin: 5px;
