@@ -2,8 +2,9 @@ import styled from 'styled-components';
 
 const SContactMap = styled.div`
   .leaflet-container {
-    width: 40%;
-    height: 500px;
+    margin: 3em;
+    width: 500px;
+    height: 350px;
   }
 `;
 
