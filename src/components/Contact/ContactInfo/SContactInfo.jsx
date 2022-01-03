@@ -22,7 +22,12 @@ const SContactInfo = styled.div`
   }
 
   p {
+    margin-top: 5%;
     width: 80%;
+    text-align: center;
+  }
+
+  h2 {
     text-align: center;
   }
 

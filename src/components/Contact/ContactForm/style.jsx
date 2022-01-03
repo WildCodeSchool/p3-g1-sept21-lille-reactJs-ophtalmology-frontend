@@ -5,6 +5,7 @@ const SFormContact = styled.form`
   flex-direction: column;
   padding: 5px;
   width: 30vw;
+
   border: 2px solid var(--mColor);
 
   border-radius: 5px;
