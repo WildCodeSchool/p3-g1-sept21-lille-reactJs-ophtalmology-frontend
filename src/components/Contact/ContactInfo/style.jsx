@@ -1,19 +1,19 @@
 import styled from 'styled-components';
 
-const SContactInfo = styled.div`
+const SContactDiv = styled.div`
   color: white;
   display: flex;
   justify-content: space-around;
   width: 100%;
-
+ 
   section {
     background-color: var(--color);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    width: 22vw;
-    height: 29vh;
+    width: 20vw;
+    min-width: 10%;
     padding: 2em;
     margin-top: 2em;
     box-shadow: inset -1px 3px 8px 5px #1f87ff, 2px 5px 16px 0px #0b325e,
@@ -28,6 +28,7 @@ const SContactInfo = styled.div`
   }
 
   h2 {
+    margin-top: 5%;
     text-align: center;
   }
 
@@ -39,6 +40,19 @@ const SContactInfo = styled.div`
     text-decoration: none;
     color: white;
   }
+  @media only screen and (max-width: 1100px) {
+    flex-wrap: wrap;
+
+    section {
+      width:30%
+    }
+    @media only screen and (max-width: 700px) {
+      flex-direction: column;
+      align-items: center;
+      
+    section {
+      width: 80%
+    }  
 `;
 
-export default SContactInfo;
+export default SContactDiv;

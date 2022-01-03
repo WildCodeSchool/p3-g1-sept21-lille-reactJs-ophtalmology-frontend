@@ -1,8 +1,8 @@
-import SContactInfo from './SContactInfo';
+import SContactDiv from './style';
 
 function ContactInfos() {
   return (
-    <SContactInfo>
+    <SContactDiv>
       <section>
         <img
           src="https://img.icons8.com/ios-filled/100/ffffff/phone.png"
@@ -40,7 +40,7 @@ function ContactInfos() {
           Service du Dr Gatinel
         </p>
       </section>
-    </SContactInfo>
+    </SContactDiv>
   );
 }
 
