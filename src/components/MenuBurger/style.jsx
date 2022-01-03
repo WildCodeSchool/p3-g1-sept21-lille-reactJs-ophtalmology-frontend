@@ -16,12 +16,12 @@ const SFormMenuBurger = styled.div`
       z-index: 1000;
       margin-bottom: 1vh;
       width: 100%;
-      background-color: #0081c9;
+      background-color: var(--mColor);
       background-size: 100vw 1200px;
     }
     .bm-burger-bars {
       background: black;
-      border-radius: 9999px;
+      border-radius: 10px;
     }
     .bm-cross-button {
       height: 24px;
@@ -45,7 +45,7 @@ const SFormMenuBurger = styled.div`
     .bm-item-list {
       color: #fff;
       padding: 0.8em;
-      font-family: 'Reem Kufi', sans-serif;
+      font-family: var(--mFont);
     }
     .bm-item {
       display: inline-block;
