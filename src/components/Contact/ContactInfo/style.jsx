@@ -47,7 +47,7 @@ const SContactDiv = styled.div`
       width:30%
     }
     width {
-      width: 10vh;
+      width: 10vw;
     }
     @media only screen and (max-width: 600px) {
       flex-direction: column;
