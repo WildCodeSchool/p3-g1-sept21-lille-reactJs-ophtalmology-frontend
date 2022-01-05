@@ -12,10 +12,6 @@ const SContactMap = styled.div`
     height: 50vh;
     }
   
-  @media only screen and (max-width: 600px) {
-    .leaflet-container {
-
-    }
 `;
 
 export default SContactMap;
