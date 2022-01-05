@@ -4,7 +4,7 @@ import SFormMenuBurger from './style';
 export default function MenuBurger() {
   return (
     <SFormMenuBurger id="myMenuBurger">
-      <div className="menu">
+      <div className="menuBurger">
         <Menu>
           <ul>
             <li>
