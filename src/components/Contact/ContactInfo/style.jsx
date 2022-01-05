@@ -42,7 +42,7 @@ const SContactDiv = styled.div`
   @media only screen and (max-width: 1000px) {
     flex-wrap: wrap;
   }
-;
+
     @media only screen and (max-width: 600px) {
       flex-direction: column;
       align-items: center;
