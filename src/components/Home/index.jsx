@@ -2,9 +2,9 @@ import Introduction from './Introduction';
 
 function Home() {
   return (
-    <body>
+    <section>
       <Introduction />
-    </body>
+    </section>
   );
 }
 

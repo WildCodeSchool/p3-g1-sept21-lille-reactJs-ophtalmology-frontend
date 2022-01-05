@@ -5,7 +5,7 @@ const SAbout = styled.section`
     width: 100vw;
     height: auto;
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
   }
   .aboutPicDiv {
     width: 100%;
@@ -18,7 +18,7 @@ const SAbout = styled.section`
     font-size: 18px;
     margin: 20px;
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
     text-align: center;
   }
   .aboutText {
@@ -26,7 +26,7 @@ const SAbout = styled.section`
   }
   @media only screen and (min-width: 700px) {
     .about {
-      flex-flow: row;
+      flex-direction: row;
       margin: 30px 5px 5px 5px;
       align-items: center;
     }

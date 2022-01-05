@@ -5,7 +5,7 @@ const SIntroduction = styled.section`
     width: 100vw;
     height: auto;
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
   }
   .aljPictureDiv {
     width: 100%;
@@ -19,7 +19,7 @@ const SIntroduction = styled.section`
     padding: 20px;
     font-size: 18px;
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
   }
   .aljTitle {
     width: 100%;
@@ -44,7 +44,7 @@ const SIntroduction = styled.section`
       width: 100vw;
       color: black;
       justify-content: flex-start;
-      flex-flow: row;
+      flex-direction: row;
       align-items: center;
       margin: 30px 5px 5px 5px;
     }
