@@ -38,20 +38,18 @@ const SFormContact = styled.form`
     font-size: large;
   }
 
-    @media only screen and (max-width: 1100px) {
-      width: 80%;
- 
-      }
-      .button {
-        width :30%;
+  @media only screen and (max-width: 1100px) {
+    width: 80%;
+  }
+  .button {
+    width: 30%;
+  }
 
-      }
-  
   @media only screen and (max-width: 600px) {
     width: 80%;
-    .button {
-        width :45%;
-
-      }
+  }
+  .button {
+    width: 45%;
+  }
 `;
 export default SFormContact;
