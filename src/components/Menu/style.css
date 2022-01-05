@@ -54,7 +54,9 @@ li.dropDown {
   text-align: left;
 }
 
-.dropDownContent a:hover { background-color: #f1f1f1; }
+.dropDownContent a:hover {
+  background-color: #f1f1f1;
+}
 
 .dropDown:hover .dropDownContent {
   display: block;
