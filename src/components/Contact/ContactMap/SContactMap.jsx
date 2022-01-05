@@ -6,6 +6,7 @@ const SContactMap = styled.div`
     width: 30vw;
     height: 40vh;
   }
+  
   @media only screen and (max-width: 1100px) {
     .leaflet-container {
     width: 70vw;

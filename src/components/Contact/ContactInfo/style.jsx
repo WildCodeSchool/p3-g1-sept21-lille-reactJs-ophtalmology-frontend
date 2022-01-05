@@ -50,6 +50,7 @@ const SContactDiv = styled.div`
     section {
       width: 80%;
     }  
+    
     img {
       width: 10vw;
     }

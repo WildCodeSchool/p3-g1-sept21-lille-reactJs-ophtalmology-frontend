@@ -5,21 +5,21 @@ const SFormContact = styled.form`
   flex-direction: column;
   padding: 5px;
   width: 30vw;
-
   border: 2px solid var(--mColor);
-
   border-radius: 5px;
 
   label {
     padding: 5px;
     display: flex;
     flex-direction: column;
+
     input {
       margin: 5px;
       height: 4vh;
       border-radius: 5px;
       border: 2px solid var(--mColor);
     }
+
     textarea {
       margin: 5px;
       height: 12vh;
@@ -27,6 +27,7 @@ const SFormContact = styled.form`
       border: 2px solid var(--mColor);
     }
   }
+
   .button {
     width: 30%;
     height: 7vh;
@@ -41,6 +42,7 @@ const SFormContact = styled.form`
   @media only screen and (max-width: 1100px) {
     width: 80%;
   }
+
   .button {
     width: 30%;
   }
@@ -48,6 +50,7 @@ const SFormContact = styled.form`
   @media only screen and (max-width: 600px) {
     width: 80%;
   }
+
   .button {
     width: 45%;
   }
