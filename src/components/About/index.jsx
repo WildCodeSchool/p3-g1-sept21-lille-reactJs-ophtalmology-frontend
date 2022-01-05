@@ -4,7 +4,7 @@ import ALJ2 from '../../assets/ALJ2.jpg';
 function About() {
   return (
     <SAbout>
-      <body className="about">
+      <section className="about">
         <div className="aboutPicDiv">
           <img className="aboutPic" src={ALJ2} alt="Dr. Jeannerot" />
         </div>
@@ -30,7 +30,7 @@ function About() {
             Dr. Grise-Dulac.
           </p>
         </div>
-      </body>
+      </section>
     </SAbout>
   );
 }

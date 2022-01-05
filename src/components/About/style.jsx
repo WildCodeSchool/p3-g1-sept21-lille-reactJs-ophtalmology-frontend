@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const SAbout = styled.body`
+const SAbout = styled.section`
   .about {
     width: 100vw;
     height: auto;
