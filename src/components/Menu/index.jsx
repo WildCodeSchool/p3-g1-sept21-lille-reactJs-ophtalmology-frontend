@@ -1,8 +1,10 @@
 import SFormMenu from './style';
+import MenuBurger from '../MenuBurger';
 
 export default function Menu() {
   return (
     <SFormMenu id="myMenu">
+      <MenuBurger />
       <nav className="menu">
         <div className="dropDown">
           <div className="dropContent">Glaucome</div>
