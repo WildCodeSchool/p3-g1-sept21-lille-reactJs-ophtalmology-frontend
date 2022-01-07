@@ -1,9 +1,11 @@
+import EyeMap from 'components/EyeMap';
 import Introduction from './Introduction';
 
 function Home() {
   return (
     <section>
       <Introduction />
+      <EyeMap />
     </section>
   );
 }
