@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const SEye = styled.main`
+const SEye = styled.eye`
   display: flex;
   align-items: center;
   width: 75vw;
