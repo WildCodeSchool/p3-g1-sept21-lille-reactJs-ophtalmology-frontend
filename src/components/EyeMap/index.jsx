@@ -17,8 +17,8 @@ export default function EyeMap() {
   };
   return (
     <SEye>
-      <img src={ALJschemas} useMap="#oeil-map" alt="Imgoeil" />
-      <map name="oeil-map">
+      <img src={ALJschemas} useMap="#eye-map" alt="Imgeye" />
+      <map name="eye-map">
         <area
           shape="circle"
           coords="14,168,19"
