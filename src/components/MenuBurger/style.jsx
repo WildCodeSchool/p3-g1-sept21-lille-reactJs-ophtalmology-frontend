@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 const SFormMenuBurger = styled.div`
-  @media only screen and (max-width: 750px) {
+
+  @media only screen and (max-width: 926px) {
     .bm-burger-button {
       position: fixed;
       width: 36px;
@@ -9,7 +10,7 @@ const SFormMenuBurger = styled.div`
       left: 36px;
       top: 28px;
     }
-    .menu {
+    .menuBurger {
       height: 10vh;
       position: fixed;
       top: 0;
@@ -53,7 +54,7 @@ const SFormMenuBurger = styled.div`
     .bm-overlay {
       background: rgba(0, 0, 0, 0.3);
     }
-    .menu li {
+    .menuBurger li {
       margin-top: 2vh;
     }
     details {
@@ -77,5 +78,9 @@ const SFormMenuBurger = styled.div`
       margin-bottom: 0.5em;
     }
   }
+  @media only screen and (min-width: 927px) {
+    .menuBurger{
+      display: none;
+    }
 `;
 export default SFormMenuBurger;

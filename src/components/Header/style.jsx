@@ -51,8 +51,6 @@ const SHeader = styled.header`
       background-color: #fff;
       display: flex;
       justify-content: space-between;
-      /* the border-bottom will be deleted later */
-      border-bottom: 1px solid black;
     }
 
     .headerLogoContainer {
