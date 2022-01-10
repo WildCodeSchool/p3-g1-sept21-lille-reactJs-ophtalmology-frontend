@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import { slide as Menu } from 'react-burger-menu';
 import SFormMenuBurger from './style';
 
@@ -44,11 +45,15 @@ export default function MenuBurger() {
             </li>
             <li>
               <details>
-                <summary>Cataracte</summary>
-                <p>• Présentation</p>
+                <summary>À propos</summary>
+                <p>
+                  <NavLink to="/about">• Présentation</NavLink>
+                </p>
                 <p>• Actualités</p>
                 <p>• Informations pratiques</p>
-                <p>• Contact</p>
+                <p>
+                  <NavLink to="/contact">• Contact</NavLink>
+                </p>
                 <p>• Liens utiles</p>
                 <p>• FAQ générale</p>
               </details>

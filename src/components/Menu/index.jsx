@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import SFormMenu from './style';
 import MenuBurger from '../MenuBurger';
 
@@ -45,10 +46,14 @@ export default function Menu() {
         <div className="dropDown">
           <div className="dropContent">À propos</div>
           <ul className="dropDownContent">
-            <li>Présentation</li>
+            <li>
+              <NavLink to="/about">Présentation</NavLink>
+            </li>
             <li>Actualités</li>
             <li>Informations pratiques</li>
-            <li>Contact</li>
+            <li>
+              <NavLink to="/contact">Contact</NavLink>
+            </li>
             <li>Liens utiles</li>
             <li>FAQ générale</li>
           </ul>

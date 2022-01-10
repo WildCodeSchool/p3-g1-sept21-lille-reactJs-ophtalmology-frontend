@@ -65,6 +65,11 @@ const SFormMenuBurger = styled.div`
     details p {
       margin: 15px;
     }
+
+    details p a {
+      text-decoration: none;
+      color: white;
+    }
     summary {
       font-weight: bold;
       margin: -0.5em -0.5em 0;
