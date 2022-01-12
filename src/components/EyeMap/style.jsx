@@ -2,20 +2,44 @@ import styled from 'styled-components';
 
 const SEye = styled.section`
   display: flex;
+  flex-direction: column;
   align-items: center;
-  width: 75vw;
+  height: 25vw;
+  width: 100%;
+  border-radius: 2vh;
   margin: auto;
   img {
-    border: solid 1px var(--mColor);
-    border-radius: 3px;
-    box-shadow: inset -1px 3px 8px 5px #1f87ff, 2px 5px 16px 0px #0b325e,
-      50px 5px 0px 5px rgba(0, 0, 0, 0);
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
   }
   p {
-    width: 600px;
-    text-align: center;
+    display: flex;
+    align-items: center;
     color: var(--mColor);
-    margin-left: 10rem;
+    font-size: 3vh;
+    margin-bottom: 5vh;
   }
+  p:hover {
+    display: flex;
+    align-items: center;
+    color: var(--mColor);
+    font-size: 3vh;
+    margin-bottom: 5vh;
+    border-radius: 3px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  }
+  @media only screen and (max-width: 800px) {
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  img {
+      margin-top: 100px;
+    }
+  }
+
 `;
 export default SEye;
