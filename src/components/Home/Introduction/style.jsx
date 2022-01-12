@@ -159,6 +159,9 @@ const SIntroduction = styled.section`
     .aboutTextHidden {
       display: none;
     }
+    button {
+      cursor: pointer;
+    }
   }
 `;
 
