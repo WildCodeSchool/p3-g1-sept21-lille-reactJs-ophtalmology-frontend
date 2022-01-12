@@ -149,12 +149,14 @@ const SIntroduction = styled.section`
       width: 40vw;
       padding: 10px;
       line-height: 30px;
+      font-size: 18px;
       display: flex;
       flex-direction: column;
     }
     .aboutText {
       margin-bottom: 10px;
       text-align: center;
+      font-size: 18px;
     }
     .aboutTextHidden {
       display: none;

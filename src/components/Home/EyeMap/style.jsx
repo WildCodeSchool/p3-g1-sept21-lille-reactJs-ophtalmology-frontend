@@ -6,7 +6,7 @@ const SEye = styled.section`
   align-items: center;
   width: 100%;
   border-radius: 2vh;
-  margin: auto;
+  margin: 30px auto;
   img {
     justify-content: center;
     flex-direction: column;
