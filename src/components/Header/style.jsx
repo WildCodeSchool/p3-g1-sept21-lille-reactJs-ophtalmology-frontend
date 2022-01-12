@@ -10,6 +10,7 @@ const SHeader = styled.header`
     align-items: center;
     flex-flow: row;
     padding: 2px;
+    margin-top: 75px;
   }
 
   .headerLogoContainer {
