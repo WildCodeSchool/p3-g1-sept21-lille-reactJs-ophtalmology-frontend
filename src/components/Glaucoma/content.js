@@ -1,7 +1,7 @@
 const glaucomaContent = [
   {
     id: 0,
-    title: 'Les différents types de glaucome',
+    title: 'En résumé',
     content: `Le Glaucome est une maladie touchant le nerf optique. Elle est chronique est progressive. Elle engendre une perte des cellules ganglionnaire retiniennes.et des fibres optiques, de façon irréversible
     Elle est due à de multiples facteurs comme la génétique, des anomalies du trabéculum filtrant l’humeur aqueuse, mais surtout à l’augmentation de la pression intraoculaire (axe principal de la thérapeutique).
     La maladie évolue de façon insidieuse à ses débuts et peut mener à la cécité.
@@ -9,6 +9,13 @@ const glaucomaContent = [
   },
   {
     id: 1,
+    title: 'Les signes du glaucome',
+    content: `Malheureusement, il n’y a aucune gêne ressentie pendant très longtemps. C’est une maladie pernicieuse comme peut l’être le diabète, pas son côté faussement asymptomatique. L’augmentation de la pression intraoculaire sauf si très importante et rapide, n’est pas ressentie par le patient. 
+    De même les premiers signes du glaucome sont une atteinte du champ visuel périphérique qui peuvent être masqués. Le champ visuel de l’autre œil, comble l’image manquante ou le cerveau retraite l’image.
+    `,
+  },
+  {
+    id: 2,
     title: 'Les différentes formes de glaucome',
     content: `Plutôt que de glaucome, nous devrions parler des Glaucomes.
     Il existe des glaucomes à angle ouverts et d’autres à angle fermés.
@@ -19,7 +26,7 @@ const glaucomaContent = [
     `,
   },
   {
-    id: 2,
+    id: 3,
     title: 'Quels sont les facteurs de risques ?',
     content: `Il existe indéniablement une part héréditaire.
     Toutefois cela ne suffit pas à expliquer la pathologie glaucomateuse.
@@ -35,7 +42,7 @@ const glaucomaContent = [
     `,
   },
   {
-    id: 3,
+    id: 4,
     title: 'La consultation dans la pathologie glaucomateuse',
     content: `
     La première étape de l’examen clinique consiste à réaliser une acuité visuelle, pour évaluer votre fonction visuelle.
@@ -64,7 +71,7 @@ const glaucomaContent = [
     `,
   },
   {
-    id: 4,
+    id: 5,
     title: 'Le Champ Visuel en pratique',
     content: `C’est souvent un moment stressant pour les patients qui ont peur de ne pas tout voir.
     Installez-vous confortablement, à la bonne hauteur. Il est important de ne pas bouger les yeux durant l’examen, sans vouloir attraper les points même périphériques. Ne vous empêchez pas de cligner. N’hésitez pas à demander une pause à l’orthoptiste.
@@ -72,7 +79,7 @@ const glaucomaContent = [
     `,
   },
   {
-    id: 5,
+    id: 6,
     title: 'Les traitements',
     content: `Il existe un large arsenal thérapeutique.
     Les traitements dépendent des caractéristiques de votre glaucome, et de l’état d’évolution.
@@ -88,7 +95,7 @@ const glaucomaContent = [
     `,
   },
   {
-    id: 6,
+    id: 7,
     title: 'Les lasers',
     content: `-L’iridotomie au laser
 
@@ -118,7 +125,7 @@ const glaucomaContent = [
     `,
   },
   {
-    id: 7,
+    id: 8,
     title: 'La chirurgie filtrante',
     content: `La chirurgie filtrante consiste a baisser la pression intra-oculaire en créant une chape d’échappement de l’humeur aqueuse.
     Pour la trabeculectomie, et la sclérectomie, elle induit la formation d’une bulle de filtration en sous conjonctival, où d’évacue l’humeur aqueuse. Cette bulle est située sous la paupière supérieure.
@@ -146,7 +153,7 @@ const glaucomaContent = [
     `,
   },
   {
-    id: 8,
+    id: 9,
     title: 'FAQ : Comment instiller les collyres ? Que puis-je faire ?',
     content: `Quels sont les symptômes ?
     Le glaucome est longtemps asymptomatique.

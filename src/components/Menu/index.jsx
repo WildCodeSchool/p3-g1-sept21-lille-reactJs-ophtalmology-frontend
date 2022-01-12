@@ -13,6 +13,7 @@ export default function Menu() {
             <li>
               <NavLink to="/glaucoma">En résumé</NavLink>
             </li>
+            <li>Les signes du glaucome</li>
             <li>Les différentes formes de glaucome</li>
             <li>Quels sont les facteurs de risques ?</li>
             <li>La consultation dans la pathologie glaucomateuse</li>

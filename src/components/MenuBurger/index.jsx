@@ -12,6 +12,7 @@ export default function MenuBurger() {
               <details>
                 <summary>Glaucome</summary>
                 <p>• En résumé</p>
+                <p>• Les signes du glaucome</p>
                 <p>• Les différentes formes de glaucome</p>
                 <p>• Quels sont les facteurs de risques ?</p>
                 <p>• La consultation dans la pathologie glaucomateuse</p>
