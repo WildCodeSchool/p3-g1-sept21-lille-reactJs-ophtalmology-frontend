@@ -52,6 +52,7 @@ const SHeader = styled.header`
       background-color: #fff;
       display: flex;
       justify-content: space-between;
+      margin-top: 0;
     }
 
     .headerLogoContainer {
