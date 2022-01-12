@@ -15,7 +15,7 @@ const SIntroduction = styled.section`
   }
   .aljAchievementList {
     background-color: white;
-    width: 90vw;
+    width: 90%;
     padding: 20px;
     font-size: 18px;
     display: flex;
@@ -23,9 +23,9 @@ const SIntroduction = styled.section`
   }
   .aboutTextDiv {
     background-color: white;
-    width: 90vw;
+    width: 90%;
     padding: 20px;
-    font-size: 18px;
+    font-size: 16px;
     display: flex;
     flex-direction: column;
   }
@@ -33,10 +33,10 @@ const SIntroduction = styled.section`
     display: none;
   }
   .aljTitleMobile {
-    width: 100%;
+    width: 90%;
     font-size: 20px;
     text-align: center;
-    margin: 15px;
+    margin: 15px auto;
   }
   .aljAchievement {
     margin: 10px;
@@ -47,7 +47,7 @@ const SIntroduction = styled.section`
     background-color: white;
     font: var(--mFont);
     color: var(--mColor);
-    margin: 20px;
+    margin: 20px auto;
     display: flex;
     justify-content: center;
     align-items: center;
