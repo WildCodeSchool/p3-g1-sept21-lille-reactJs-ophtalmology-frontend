@@ -11,6 +11,7 @@ const SHeader = styled.header`
     flex-flow: row;
     padding: 2px;
     margin-top: 75px;
+    box-sizing: border-box;
   }
 
   .headerLogoContainer {
