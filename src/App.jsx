@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import Cataract from './components/Cataract';
 import './reset.css';
 import './App.css';
+import Refractive from './components/Refractive';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/cataract" element={<Cataract />} />
+          <Route path="refractive" element={<Refractive />} />
           <Route path="/about" element={<About />} />
         </Routes>
         <Footer />
