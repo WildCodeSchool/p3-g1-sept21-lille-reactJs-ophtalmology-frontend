@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 const SFormMenuBurger = styled.div`
-
   @media only screen and (max-width: 926px) {
     .bm-burger-button {
       position: fixed;
@@ -65,7 +64,6 @@ const SFormMenuBurger = styled.div`
     details p {
       margin: 15px;
     }
-
     details p a {
       text-decoration: none;
       color: white;
@@ -82,10 +80,17 @@ const SFormMenuBurger = styled.div`
       border-bottom: 1px solid #aaa;
       margin-bottom: 0.5em;
     }
+    summary a {
+      margin-left: 3px;
+      color: white;
+      text-decoration: none;
+    }
   }
+
   @media only screen and (min-width: 927px) {
-    .menuBurger{
+    .menuBurger {
       display: none;
     }
+  }
 `;
 export default SFormMenuBurger;

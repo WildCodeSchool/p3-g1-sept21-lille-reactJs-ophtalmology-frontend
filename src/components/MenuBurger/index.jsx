@@ -10,7 +10,9 @@ export default function MenuBurger() {
           <ul>
             <li>
               <details>
-                <summary>Glaucome</summary>
+                <summary>
+                  <NavLink to="/glaucoma">Glaucome</NavLink>
+                </summary>
                 <p>• 3.1 Les différents types de glaucome</p>
                 <p>• 3.2 Les signes du glaucome</p>
                 <p>• 3.2.1 Quels sont les facteurs de risques ?</p>
@@ -26,14 +28,18 @@ export default function MenuBurger() {
             </li>
             <li>
               <details>
-                <summary>Cataracte</summary>
+                <summary>
+                  <NavLink to="/cataract">Cataracte</NavLink>
+                </summary>
                 <p>• L’implant : Les implants multifocaux</p>
                 <p>• La cataracte secondaire</p>
               </details>
             </li>
             <li>
               <details>
-                <summary>Chirurgie rétractive</summary>
+                <summary>
+                  <NavLink to="/refractive">Chirurgie réfractive</NavLink>
+                </summary>
                 <p>• Quels sont les défauts de vision corrigés ?</p>
                 <p>• Comment se déroule l’opération ?</p>
                 <p>• Combien de temps dure la procédure ?</p>
@@ -45,7 +51,7 @@ export default function MenuBurger() {
             </li>
             <li>
               <details>
-                <summary>À propos</summary>
+                <summary>&nbsp;À propos</summary>
                 <p>
                   <NavLink to="/about">• Présentation</NavLink>
                 </p>
