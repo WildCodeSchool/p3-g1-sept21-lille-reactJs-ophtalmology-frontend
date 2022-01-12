@@ -13,14 +13,14 @@ export default function MenuBurger() {
                 <summary>
                   <NavLink to="/glaucoma">Glaucome</NavLink>
                 </summary>
-                <p>• 3.1 Les différents types de glaucome</p>
-                <p>• 3.2 Les signes du glaucome</p>
-                <p>• 3.2.1 Quels sont les facteurs de risques ?</p>
-                <p>• 3.3 La consultation dans la pathologie glaucomateuse</p>
-                <p>• 3.4 : le Champ Visuel en pratique</p>
-                <p>• 3.4.1 Les traitements</p>
-                <p>• 3.4.2 les laser</p>
-                <p>• 3.4.3 La chirurgie filtrante</p>
+                <p>• Les différents types de glaucome</p>
+                <p>• Les signes du glaucome</p>
+                <p>• Quels sont les facteurs de risques ?</p>
+                <p>• La consultation dans la pathologie glaucomateuse</p>
+                <p>• Le champ visuel en pratique</p>
+                <p>• Les traitements</p>
+                <p>• Les laser</p>
+                <p>• La chirurgie filtrante</p>
                 <p>
                   • FAQ : Comment instiller les collyres ? Que puis-je faire ?
                 </p>
