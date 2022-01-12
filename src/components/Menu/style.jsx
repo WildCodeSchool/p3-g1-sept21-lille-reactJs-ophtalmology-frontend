@@ -19,6 +19,7 @@ const SFormMenu = styled.div`
       padding: 0;
       overflow: hidden;
       background-color: var(--mColor);
+      z-index: 1;
     }
 
     .dropContent {
