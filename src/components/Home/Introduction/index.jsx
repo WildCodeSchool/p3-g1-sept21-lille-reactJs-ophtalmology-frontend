@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import ALJNB from '../../../assets/ALJNB.jpg';
 import SIntroduction from './style';
 
@@ -32,6 +32,7 @@ function Introduction() {
             </div>
           </div>
         </div>
+
         <div>
           <h3 className="aljTitleMobile">
             Chirurgien ophtalmologiste à la Fondation Ophtalmologique Adolphe de
@@ -57,7 +58,7 @@ function Introduction() {
               </p>
               <p className="aboutText">
                 Le Dr. Gatinel m’offre l’opportunité, par la suite de rejoindre
-                son équipe en chirurgie refrcative et en développant le glaucome
+                son équipe en chirurgie réfractive et en développant le glaucome
                 avec le Dr. Grise-Dulac.
               </p>
               <button

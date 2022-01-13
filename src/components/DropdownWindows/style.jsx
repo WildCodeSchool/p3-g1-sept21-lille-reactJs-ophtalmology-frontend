@@ -18,8 +18,21 @@ const SDropdownWindow = styled.section`
     justify-content: flex-start;
     align-items: center;
   }
+  .windowTitle {
+    width: 90vw;
+    height: 40px;
+    margin: 20px auto 0 auto;
+    display: flex;
+    align-items: center;
+  }
   .hiddenDropdown {
     display: none;
+  }
+  .dropdownContent {
+    width: 89vw;
+    padding: 10px;
+    line-height: 22px;
+    margin: auto;
   }
 
   @media only screen and (min-width: 700px) {
@@ -27,13 +40,15 @@ const SDropdownWindow = styled.section`
 
     .windowTitle {
       width: 75vw;
-      height: 40px;
-      display: flex;
-      align-items: center;
+      height: 50px;
     }
     .dropdownContent {
-      width: 75vw;
+      width: 74vw;
       height: auto;
+      line-height: 26px;
+    }
+    button {
+      cursor: pointer;
     }
   }
 `;
