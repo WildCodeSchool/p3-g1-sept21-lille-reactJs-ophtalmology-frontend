@@ -19,13 +19,15 @@ const SFormMenu = styled.div`
       padding: 0;
       overflow: hidden;
       background-color: var(--mColor);
+      z-index: 1;
     }
 
     .dropContent {
       display: flex;
       color: white;
       text-align: center;
-      padding: 14px 16px;
+      padding: 0 14px 0 14px;
+      margin: 20px 0;
       text-decoration: none;
     }
 
@@ -33,7 +35,8 @@ const SFormMenu = styled.div`
       background-color: white;
       color: black;
       height: 52px;
-      padding-top: 45px;
+      justify-content: center;
+      align-items:center;
     }
 
     li.dropDown {
@@ -42,7 +45,7 @@ const SFormMenu = styled.div`
 
     .dropDownContent {
       color: black;
-      margin-top: -30px;
+      margin-top: -20px;
       padding-left: 10px;
       padding-right: 10px;
       display: none;

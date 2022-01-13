@@ -8,16 +8,15 @@ export default function Menu() {
       <MenuBurger />
       <nav className="menu">
         <div className="dropDown">
-          <div className="dropContent">Glaucome</div>
+          <NavLink className="dropContent" to="/glaucoma">
+            Glaucome
+          </NavLink>
           <ul className="dropDownContent">
-            <li>
-              <NavLink to="/glaucoma">En résumé</NavLink>
-            </li>
+            <li>Les différents types de glaucome</li>
             <li>Les signes du glaucome</li>
-            <li>Les différentes formes de glaucome</li>
             <li>Quels sont les facteurs de risques ?</li>
             <li>La consultation dans la pathologie glaucomateuse</li>
-            <li>Le Champ Visuel en pratique</li>
+            <li>Le champ visuel en pratique</li>
             <li>Les traitements</li>
             <li>Les lasers</li>
             <li>La chirurgie filtrante</li>
@@ -26,7 +25,9 @@ export default function Menu() {
         </div>
 
         <div className="dropDown">
-          <div className="dropContent">Cataracte</div>
+          <NavLink className="dropContent" to="/cataract">
+            Cataracte
+          </NavLink>
           <ul className="dropDownContent">
             <li>L’implant : Les implants multifocaux</li>
             <li>La cataracte secondaire</li>
@@ -34,7 +35,9 @@ export default function Menu() {
         </div>
 
         <div className="dropDown">
-          <div className="dropContent">Chirurgie rétractive</div>
+          <NavLink className="dropContent" to="/refractive">
+            Chirurgie réfractive
+          </NavLink>
           <ul className="dropDownContent">
             <li>Quels sont les défauts de vision corrigés ?</li>
             <li>Comment se déroule l’opération ?</li>

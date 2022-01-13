@@ -5,10 +5,16 @@ import ALJschemas from './ALJschemas3.png';
 export default function EyeMap() {
   const [details, setDetails] = useState(null);
   const texts = {
-    cornee:
-      'Lorem ipsum dolor sit amet. Et optio sunt sit dolore dolorum nam deserunt consequatur. Et quasi autem eos odit facilis et velit et reprehenderit est repudiandae asperiores et enim similique ut consequuntur dolores',
-    humeur:
-      'Sed magni autem qui Quis voluptatibus rem expedita doloribus. Est quasi explicabo non delectus adipisci aut libero voluptatem eum dolorum assumenda a quia rerum. ',
+    cornee: 'Cornée',
+    humeur: 'Humeur acqueuse ',
+    pupille: 'Pupille',
+    iris: 'Iris',
+    cristallin: 'Cristallin',
+    vitré: 'Vitré',
+    nerf: 'Nerf optique',
+    retine: 'Rétine',
+    corps: 'Corps ciliaire',
+    conjonctive: 'Conjonctive',
   };
 
   const handleClick = (e) => {
@@ -17,11 +23,13 @@ export default function EyeMap() {
   };
   return (
     <SEye>
-      <img src={ALJschemas} useMap="#eye-map" alt="Imgeye" />
+      <div className="eyeContainer">
+        <img src={ALJschemas} useMap="#eye-map" alt="Imgeye" />
+      </div>
       <map name="eye-map">
         <area
           shape="circle"
-          coords="14,168,19"
+          coords="14,155,19"
           href="cornee"
           target="_blank"
           alt="cornee"
@@ -30,7 +38,7 @@ export default function EyeMap() {
         />
         <area
           shape="circle"
-          coords="35,133,15"
+          coords="35,100,15"
           href="Lorem2"
           target="_blank"
           alt="humeur"
@@ -39,67 +47,75 @@ export default function EyeMap() {
         />
         <area
           shape="circle"
-          coords="46,170,13"
-          href="https://developer.mozilla.org/docs/Web/Guide/Graphics"
+          coords="46,150,13"
+          href="pupille"
           target="_blank"
-          alt="Pupille"
+          alt="pupille"
           title="Pupille"
+          onClick={handleClick}
         />
         <area
           shape="circle"
-          coords="62,223,17"
-          href="https://developer.mozilla.org/docs/Web/HTML"
+          coords="62,220,22"
+          href="iris"
           target="_blank"
-          alt="Iris"
+          alt="iris"
           title="Iris"
+          onClick={handleClick}
         />
         <area
           shape="circle"
-          coords="91,165,21"
-          href="https://developer.mozilla.org/docs/Web/JavaScript"
+          coords="91,155,21"
+          href="cristallin"
           target="_blank"
-          alt="Cristallin"
+          alt="cristallin"
           title="Cristallin"
+          onClick={handleClick}
         />
         <area
           shape="circle"
-          coords="227,82,20"
-          href="https://developer.mozilla.org/docs/Web/API"
+          coords="190,82,20"
+          href="vitré"
           target="_blank"
-          alt="Vitré"
+          alt="vitré"
           title="Vitré"
+          onClick={handleClick}
         />
         <area
           shape="circle"
-          coords="302,166,20"
-          href="https://developer.mozilla.org/docs/Web/CSS"
+          coords="245,150,20"
+          href="nerf"
           target="_blank"
-          alt="nerf optique"
+          alt="nerf"
           title="Nerf optique"
+          onClick={handleClick}
         />
         <area
           shape="circle"
-          coords="262,237,13"
-          href="https://developer.mozilla.org/docs/Web/CSS"
+          coords="230,200,13"
+          href="retine"
           target="_blank"
-          alt="Rétine"
-          title="Retine"
+          alt="retine"
+          title="Rétine"
+          onClick={handleClick}
         />
         <area
           shape="circle"
           coords="74,91,20"
-          href="https://developer.mozilla.org/docs/Web/CSS"
+          href="corps"
           target="_blank"
-          alt="Corps ciliaire"
+          alt="corps"
           title="Corps ciliaire"
+          onClick={handleClick}
         />
         <area
           shape="circle"
-          coords="94,294,16"
-          href="https://developer.mozilla.org/docs/Web/CSS"
+          coords="94,250,16"
+          href="conjonctive"
           target="_blank"
-          alt="Conjonctive"
+          alt="conjonctive"
           title="Conjonctive"
+          onClick={handleClick}
         />
       </map>
       {details && <p>{details}</p>}
