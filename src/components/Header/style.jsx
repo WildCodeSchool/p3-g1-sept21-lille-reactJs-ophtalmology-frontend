@@ -10,6 +10,8 @@ const SHeader = styled.header`
     align-items: center;
     flex-flow: row;
     padding: 2px;
+    margin-top: 75px;
+    box-sizing: border-box;
   }
 
   .headerLogoContainer {
@@ -51,6 +53,7 @@ const SHeader = styled.header`
       background-color: #fff;
       display: flex;
       justify-content: space-between;
+      margin-top: 0;
     }
 
     .headerLogoContainer {

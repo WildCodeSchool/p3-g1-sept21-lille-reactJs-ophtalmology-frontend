@@ -1,4 +1,4 @@
-import EyeMap from 'components/EyeMap';
+import EyeMap from './EyeMap';
 import Introduction from './Introduction';
 
 function Home() {

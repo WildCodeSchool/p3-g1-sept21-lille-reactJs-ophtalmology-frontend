@@ -10,15 +10,17 @@ export default function MenuBurger() {
           <ul>
             <li>
               <details>
-                <summary>Glaucome</summary>
-                <p>• 3.1 Les différents types de glaucome</p>
-                <p>• 3.2 Les signes du glaucome</p>
-                <p>• 3.2.1 Quels sont les facteurs de risques ?</p>
-                <p>• 3.3 La consultation dans la pathologie glaucomateuse</p>
-                <p>• 3.4 : le Champ Visuel en pratique</p>
-                <p>• 3.4.1 Les traitements</p>
-                <p>• 3.4.2 les laser</p>
-                <p>• 3.4.3 La chirurgie filtrante</p>
+                <summary>
+                  <NavLink to="/glaucoma">Glaucome</NavLink>
+                </summary>
+                <p>• Les différents types de glaucome</p>
+                <p>• Les signes du glaucome</p>
+                <p>• Quels sont les facteurs de risques ?</p>
+                <p>• La consultation dans la pathologie glaucomateuse</p>
+                <p>• Le champ visuel en pratique</p>
+                <p>• Les traitements</p>
+                <p>• Les laser</p>
+                <p>• La chirurgie filtrante</p>
                 <p>
                   • FAQ : Comment instiller les collyres ? Que puis-je faire ?
                 </p>
@@ -26,14 +28,18 @@ export default function MenuBurger() {
             </li>
             <li>
               <details>
-                <summary>Cataracte</summary>
+                <summary>
+                  <NavLink to="/cataract">Cataracte</NavLink>
+                </summary>
                 <p>• L’implant : Les implants multifocaux</p>
                 <p>• La cataracte secondaire</p>
               </details>
             </li>
             <li>
               <details>
-                <summary>Chirurgie rétractive</summary>
+                <summary>
+                  <NavLink to="/refractive">Chirurgie réfractive</NavLink>
+                </summary>
                 <p>• Quels sont les défauts de vision corrigés ?</p>
                 <p>• Comment se déroule l’opération ?</p>
                 <p>• Combien de temps dure la procédure ?</p>
@@ -45,7 +51,7 @@ export default function MenuBurger() {
             </li>
             <li>
               <details>
-                <summary>À propos</summary>
+                <summary>&nbsp;À propos</summary>
                 <p>
                   <NavLink to="/about">• Présentation</NavLink>
                 </p>

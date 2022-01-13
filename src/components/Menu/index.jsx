@@ -8,22 +8,26 @@ export default function Menu() {
       <MenuBurger />
       <nav className="menu">
         <div className="dropDown">
-          <div className="dropContent">Glaucome</div>
+          <NavLink className="dropContent" to="/glaucoma">
+            Glaucome
+          </NavLink>
           <ul className="dropDownContent">
-            <li>3.1 Les différents types de glaucome</li>
-            <li>3.2 Les signes du glaucome</li>
-            <li>3.2.1 Quels sont les facteurs de risques ?</li>
-            <li>3.3 La consultation dans la pathologie glaucomateuse</li>
-            <li>3.4 : le Champ Visuel en pratique</li>
-            <li>3.4.1 Les traitements</li>
-            <li>3.4.2 les laser</li>
-            <li>3.4.3 La chirurgie filtrante</li>
+            <li>Les différents types de glaucome</li>
+            <li>Les signes du glaucome</li>
+            <li>Quels sont les facteurs de risques ?</li>
+            <li>La consultation dans la pathologie glaucomateuse</li>
+            <li>Le champ visuel en pratique</li>
+            <li>Les traitements</li>
+            <li>Les laser</li>
+            <li>La chirurgie filtrante</li>
             <li>FAQ : Comment instiller les collyres ? Que puis-je faire ?</li>
           </ul>
         </div>
 
         <div className="dropDown">
-          <div className="dropContent">Cataracte</div>
+          <NavLink className="dropContent" to="/cataract">
+            Cataracte
+          </NavLink>
           <ul className="dropDownContent">
             <li>L’implant : Les implants multifocaux</li>
             <li>La cataracte secondaire</li>
@@ -31,7 +35,9 @@ export default function Menu() {
         </div>
 
         <div className="dropDown">
-          <div className="dropContent">Chirurgie rétractive</div>
+          <NavLink className="dropContent" to="/refractive">
+            Chirurgie réfractive
+          </NavLink>
           <ul className="dropDownContent">
             <li>Quels sont les défauts de vision corrigés ?</li>
             <li>Comment se déroule l’opération ?</li>

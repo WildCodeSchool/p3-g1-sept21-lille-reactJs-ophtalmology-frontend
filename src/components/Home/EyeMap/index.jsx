@@ -23,11 +23,13 @@ export default function EyeMap() {
   };
   return (
     <SEye>
-      <img src={ALJschemas} useMap="#eye-map" alt="Imgeye" />
+      <div className="eyeContainer">
+        <img src={ALJschemas} useMap="#eye-map" alt="Imgeye" />
+      </div>
       <map name="eye-map">
         <area
           shape="circle"
-          coords="14,168,19"
+          coords="14,155,19"
           href="cornee"
           target="_blank"
           alt="cornee"
@@ -36,7 +38,7 @@ export default function EyeMap() {
         />
         <area
           shape="circle"
-          coords="35,133,15"
+          coords="35,100,15"
           href="Lorem2"
           target="_blank"
           alt="humeur"
@@ -45,7 +47,7 @@ export default function EyeMap() {
         />
         <area
           shape="circle"
-          coords="46,170,13"
+          coords="46,150,13"
           href="pupille"
           target="_blank"
           alt="pupille"
@@ -54,7 +56,7 @@ export default function EyeMap() {
         />
         <area
           shape="circle"
-          coords="62,224,22"
+          coords="62,220,22"
           href="iris"
           target="_blank"
           alt="iris"
@@ -63,7 +65,7 @@ export default function EyeMap() {
         />
         <area
           shape="circle"
-          coords="91,165,21"
+          coords="91,155,21"
           href="cristallin"
           target="_blank"
           alt="cristallin"
@@ -72,7 +74,7 @@ export default function EyeMap() {
         />
         <area
           shape="circle"
-          coords="227,82,20"
+          coords="190,82,20"
           href="vitré"
           target="_blank"
           alt="vitré"
@@ -81,7 +83,7 @@ export default function EyeMap() {
         />
         <area
           shape="circle"
-          coords="302,166,20"
+          coords="245,150,20"
           href="nerf"
           target="_blank"
           alt="nerf"
@@ -90,7 +92,7 @@ export default function EyeMap() {
         />
         <area
           shape="circle"
-          coords="262,237,13"
+          coords="230,200,13"
           href="retine"
           target="_blank"
           alt="retine"
@@ -108,7 +110,7 @@ export default function EyeMap() {
         />
         <area
           shape="circle"
-          coords="94,294,16"
+          coords="94,250,16"
           href="conjonctive"
           target="_blank"
           alt="conjonctive"
