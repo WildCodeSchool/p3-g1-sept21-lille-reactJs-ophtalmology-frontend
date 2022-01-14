@@ -18,7 +18,7 @@ export default function Menu() {
             <li>La consultation dans la pathologie glaucomateuse</li>
             <li>Le champ visuel en pratique</li>
             <li>Les traitements</li>
-            <li>Les laser</li>
+            <li>Les lasers</li>
             <li>La chirurgie filtrante</li>
             <li>FAQ : Comment instiller les collyres ? Que puis-je faire ?</li>
           </ul>

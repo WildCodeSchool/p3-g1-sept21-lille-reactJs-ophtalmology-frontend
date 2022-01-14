@@ -10,16 +10,15 @@ export default function MenuBurger() {
           <ul>
             <li>
               <details>
-                <summary>
-                  <NavLink to="/glaucoma">Glaucome</NavLink>
-                </summary>
-                <p>• Les différents types de glaucome</p>
+                <summary><NavLink to="/glaucoma">Glaucome</NavLink></summary>
+                <p>• En résumé</p>
                 <p>• Les signes du glaucome</p>
+                <p>• Les différentes formes de glaucome</p>
                 <p>• Quels sont les facteurs de risques ?</p>
                 <p>• La consultation dans la pathologie glaucomateuse</p>
-                <p>• Le champ visuel en pratique</p>
+                <p>• Le Champ Visuel en pratique</p>
                 <p>• Les traitements</p>
-                <p>• Les laser</p>
+                <p>• Les lasers</p>
                 <p>• La chirurgie filtrante</p>
                 <p>
                   • FAQ : Comment instiller les collyres ? Que puis-je faire ?
