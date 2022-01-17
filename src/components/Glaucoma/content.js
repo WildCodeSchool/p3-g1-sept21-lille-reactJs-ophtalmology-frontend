@@ -72,7 +72,7 @@ const glaucomaContent = [
   },
   {
     id: 5,
-    title: 'Le Champ Visuel en pratique',
+    title: 'Le champ visuel en pratique',
     content: `C’est souvent un moment stressant pour les patients qui ont peur de ne pas tout voir.
     Installez-vous confortablement, à la bonne hauteur. Il est important de ne pas bouger les yeux durant l’examen, sans vouloir attraper les points même périphériques. Ne vous empêchez pas de cligner. N’hésitez pas à demander une pause à l’orthoptiste.
     Essayez de dédramatiser le moment, votre ophtalmologiste ne repose son avis que sur le champ visuel, il regarde votre pression intraoculaire, OCT, papille.
