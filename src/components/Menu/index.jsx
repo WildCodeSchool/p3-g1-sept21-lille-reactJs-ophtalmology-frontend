@@ -12,13 +12,14 @@ export default function Menu() {
             Glaucome
           </NavLink>
           <ul className="dropDownContent">
-            <li>Les différents types de glaucome</li>
+            <li>En résumé</li>
             <li>Les signes du glaucome</li>
+            <li>Les différentes formes de glaucome</li>
             <li>Quels sont les facteurs de risques ?</li>
             <li>La consultation dans la pathologie glaucomateuse</li>
             <li>Le champ visuel en pratique</li>
             <li>Les traitements</li>
-            <li>Les laser</li>
+            <li>Les lasers</li>
             <li>La chirurgie filtrante</li>
             <li>FAQ : Comment instiller les collyres ? Que puis-je faire ?</li>
           </ul>
@@ -29,7 +30,9 @@ export default function Menu() {
             Cataracte
           </NavLink>
           <ul className="dropDownContent">
-            <li>L’implant : Les implants multifocaux</li>
+            <li>La cataracte</li>
+            <li>L&apos;implant</li>
+            <li>Les implants multifocaux</li>
             <li>La cataracte secondaire</li>
           </ul>
         </div>

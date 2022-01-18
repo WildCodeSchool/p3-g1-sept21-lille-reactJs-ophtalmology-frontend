@@ -16,6 +16,7 @@ const SDropdownWindow = styled.section`
     height: 100%;
     display: flex;
     justify-content: flex-start;
+    text-align: left;
     align-items: center;
   }
   .windowTitle {
