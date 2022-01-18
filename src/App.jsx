@@ -9,6 +9,7 @@ import About from './components/About';
 import Glaucoma from './components/Glaucoma';
 import Cataract from './components/Cataract';
 import Refractive from './components/Refractive';
+import VideoPage from './components/VideoPage';
 import './reset.css';
 import './App.css';
 
@@ -25,6 +26,7 @@ function App() {
           <Route path="/cataract" element={<Cataract />} />
           <Route path="refractive" element={<Refractive />} />
           <Route path="/about" element={<About />} />
+          <Route path="/videos" elements={<VideoPage />} />
         </Routes>
         <CommentsArea />
         <Footer />

@@ -11,16 +11,11 @@ const SComments = styled.div`
       background-color: white;
       box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.7);
     }
-
     .userComment {
       width: 100%;
     }
-
-    /* CHILD COMMENT */
     .answerComment {
-      /* width: PARENT -5vw; */
       width: 95%;
-      /* margin: PARENT +5%; */
       margin-left: 5%;
       border: 1.5px solid var(--mColor);
     }
