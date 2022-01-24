@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { PropTypes } from 'prop-types';
+import Pictures from 'components/Picture';
 import SDropdownWindow from './style';
 
 function DropdownWindow({ title, content }) {
@@ -20,6 +21,7 @@ function DropdownWindow({ title, content }) {
       <p className={toggleDropdown ? 'hiddenDropdown' : 'dropdownContent'}>
         {content}
       </p>
+      <Pictures />
     </SDropdownWindow>
   );
 }
