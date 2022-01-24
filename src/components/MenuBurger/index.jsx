@@ -13,13 +13,14 @@ export default function MenuBurger() {
                 <summary>
                   <NavLink to="/glaucoma">Glaucome</NavLink>
                 </summary>
-                <p>• Les différents types de glaucome</p>
+                <p>• En résumé</p>
                 <p>• Les signes du glaucome</p>
+                <p>• Les différentes formes de glaucome</p>
                 <p>• Quels sont les facteurs de risques ?</p>
                 <p>• La consultation dans la pathologie glaucomateuse</p>
                 <p>• Le champ visuel en pratique</p>
                 <p>• Les traitements</p>
-                <p>• Les laser</p>
+                <p>• Les lasers</p>
                 <p>• La chirurgie filtrante</p>
                 <p>
                   • FAQ : Comment instiller les collyres ? Que puis-je faire ?
@@ -31,7 +32,9 @@ export default function MenuBurger() {
                 <summary>
                   <NavLink to="/cataract">Cataracte</NavLink>
                 </summary>
-                <p>• L’implant : Les implants multifocaux</p>
+                <p>• La cataracte</p>
+                <p>• L&apos;implant</p>
+                <p>• Les implants multifocaux</p>
                 <p>• La cataracte secondaire</p>
               </details>
             </li>
