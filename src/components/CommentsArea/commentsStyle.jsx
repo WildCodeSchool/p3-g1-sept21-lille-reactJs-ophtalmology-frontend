@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const SComments = styled.div`
+const SComments = styled.section`
   @media only screen and (min-width: 700px) {
     padding: 10px 0;
 
@@ -48,19 +48,19 @@ const SComments = styled.div`
       font-weight: lighter;
       color: #a19999;
     }
-    .commentDisplay {
+    .messageDisplay {
       margin: 10px 0;
       font-size: 16px;
       line-height: 20px;
     }
-    .replyBtn {
+    /* .replyBtn {
       width: 100px;
       border: none;
       background-color: transparent;
       color: var(--mColor);
       font-size: 9px;
       cursor: pointer;
-    }
+    } */
   }
 `;
 

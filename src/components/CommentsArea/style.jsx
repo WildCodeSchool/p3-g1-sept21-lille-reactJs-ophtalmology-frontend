@@ -7,6 +7,8 @@ const SCommentsArea = styled.section`
     display: flex;
     flex-direction: column;
     background-color: #f3f2f2;
+    margin: 50px 0 -50px 0;
+
     .commentSection {
       width: 90%;
       margin: auto;
@@ -30,7 +32,7 @@ const SCommentsArea = styled.section`
       font-size: 22px;
       margin: 15px 0;
     }
-    .commentInput {
+    .messageInput {
       border: none;
       border-bottom: 1px solid black;
       background-color: transparent;
