@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-// import doctorAvatar from '../../assets/doctorAvatar.png';
+import doctorAvatar from '../../assets/doctorAvatar.png';
 import userAvatar from '../../assets/userAvatar.png';
 import SComments from './commentsStyle';
 import SCommentsArea from './style';
@@ -42,6 +42,7 @@ function CommentsArea() {
     authorName: nameChange,
     message: messageChange,
     idPages: dicoPages[pageUrl],
+    idParent: null,
   });
   useEffect(() => {
     setForm({
@@ -65,6 +66,7 @@ function CommentsArea() {
       authorName: form.authorName,
       message: form.message,
       idPages: form.idPages,
+      idParent: form.idParent,
     };
     axios
       .post('http://localhost:5050/comments', commentData)
@@ -76,6 +78,7 @@ function CommentsArea() {
             message: form.message,
             authorName: form.authorName,
             idPages: form.idPages,
+            idParent: form.idParent,
             date: Date.now(),
           },
         ])
@@ -89,7 +92,6 @@ function CommentsArea() {
         <h3>Mes échanges avec les internautes</h3>
 
         <SComments>
-          {/* TEST WITH MAP */}
           <ul>
             {commentList
               .filter((data) => {
@@ -102,12 +104,19 @@ function CommentsArea() {
                   message={comments.message}
                   date={comments.date}
                   idPages={comments.idPages}
-                  className="comment userComment"
+                  idParent={comments.idParent}
+                  className={
+                    comments.idParent == null
+                      ? `comment userComment`
+                      : `comment answerComment`
+                  }
                 >
                   <div className="avatarContainer">
                     <img
                       className="avatars"
-                      src={userAvatar}
+                      src={
+                        comments.idParent == null ? userAvatar : doctorAvatar
+                      }
                       alt="User Avatar"
                     />
                   </div>
@@ -120,24 +129,6 @@ function CommentsArea() {
                   </div>
                 </li>
               ))}
-
-            {/* IF COMMENT IS BY AL-J */}
-            {/* <li className="comment answerComment">
-              <div className="avatarContainer">
-                <img
-                  className="avatars"
-                  src={doctorAvatar}
-                  alt="Doctor Avatar"
-                />
-              </div>
-              <div className="infoContainer">
-                <p className="nameDisplay">{comments.authorName}</p>
-                <div className="dateContainer">
-                  <p className="dateDisplay">Publié le {comments.date}</p>
-                </div>
-                <p className="messageDisplay">{comments.message}</p>
-              </div>
-            </li> */}
           </ul>
         </SComments>
         <h5>Laissez votre commentaire</h5>
