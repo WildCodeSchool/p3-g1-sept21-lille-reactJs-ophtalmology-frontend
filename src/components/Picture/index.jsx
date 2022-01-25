@@ -12,7 +12,7 @@ export default function Pictures() {
   return (
     <SPicture>
       {pictures.map((picture) => {
-        return <img src={picture.description} alt="opthalmology" />;
+        return <img src={picture.url} alt={picture.description} />;
       })}
     </SPicture>
   );
