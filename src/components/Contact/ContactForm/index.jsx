@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
+import form from 'emailjs-com';
 import SFormContact from './style';
 
 export default function ContactForm() {
@@ -9,10 +11,24 @@ export default function ContactForm() {
 
   const sendEmail = (e) => {
     e.preventDefault();
+
+    emailjs
+      .sendForm(
+        'service_o61d0ep',
+        'template_xs4v5rj',
+        form.current,
+        'user_reS7eKi4CNuk1vUkF4zw9'
+      )
+      .then(() => {
+        setLastname('');
+        setFirstname('');
+        setEmail('');
+        setMessage('');
+      });
   };
 
   return (
-    <SFormContact id="myForm">
+    <SFormContact ref={form} id="myForm">
       <label htmlFor="lastname">
         Nom :
         <input
