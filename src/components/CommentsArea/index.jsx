@@ -75,6 +75,7 @@ function CommentsArea() {
             id: 0,
             message: form.message,
             authorName: form.authorName,
+            idPages: form.idPages,
             date: Date.now(),
           },
         ])
