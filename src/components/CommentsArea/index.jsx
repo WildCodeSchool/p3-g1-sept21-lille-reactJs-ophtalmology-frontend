@@ -29,7 +29,7 @@ function CommentsArea() {
   const [messageChange, setMessageChange] = useState('');
   const onMessageChange = (evt) => setMessageChange(evt.target.value);
 
-  // FORM ?
+  // FORM
   const dicoPages = {
     '/': 1,
     '/glaucoma': 2,
