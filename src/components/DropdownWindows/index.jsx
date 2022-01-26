@@ -3,8 +3,8 @@ import { PropTypes } from 'prop-types';
 import Pictures from 'components/Picture';
 import SDropdownWindow from './style';
 
-function DropdownWindow({ title, content }) {
-  const [toggleDropdown, setToggleDropdown] = useState(true);
+function DropdownWindow({ title, content, Dropdown }) {
+  const [toggleDropdown, setToggleDropdown] = useState(Dropdown);
   const showToggleDropdown = () => setToggleDropdown(!toggleDropdown);
 
   return (
@@ -28,5 +28,6 @@ function DropdownWindow({ title, content }) {
 DropdownWindow.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string.isRequired,
+  Dropdown: PropTypes.bool.isRequired,
 };
 export default DropdownWindow;
