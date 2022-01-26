@@ -53,14 +53,6 @@ const SComments = styled.section`
       font-size: 16px;
       line-height: 20px;
     }
-    /* .replyBtn {
-      width: 100px;
-      border: none;
-      background-color: transparent;
-      color: var(--mColor);
-      font-size: 9px;
-      cursor: pointer;
-    } */
   }
 `;
 

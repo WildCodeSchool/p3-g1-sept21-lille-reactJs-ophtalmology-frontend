@@ -11,7 +11,7 @@ function CommentsArea() {
   const [commentList, setCommentList] = useState([]);
   useEffect(() => {
     axios
-      .get('http://localhost:5050/comments')
+      .get(`${process.env.REACT_APP_API_URL}/comments`)
       .then((res) => res.data)
       .then((data) => {
         setCommentList(data);
@@ -69,7 +69,7 @@ function CommentsArea() {
       idParent: form.idParent,
     };
     axios
-      .post('http://localhost:5050/comments', commentData)
+      .post(`${process.env.REACT_APP_API_URL}/comments`, commentData)
       .then(() =>
         setCommentList([
           ...commentList,
