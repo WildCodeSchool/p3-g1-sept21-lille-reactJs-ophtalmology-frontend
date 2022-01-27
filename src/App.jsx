@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Glaucoma from 'components/Glaucoma';
+import Glaucoma from './components/Glaucoma';
 import Header from './components/Header';
 import Menu from './components/Menu';
 import Home from './components/Home';
@@ -7,7 +7,6 @@ import Footer from './components/Footer';
 import CommentsArea from './components/CommentsArea';
 import Contact from './components/Contact';
 import About from './components/About';
-import Glaucoma from './components/Glaucoma';
 import Cataract from './components/Cataract';
 import Refractive from './components/Refractive';
 import VideoPage from './components/VideoPage';

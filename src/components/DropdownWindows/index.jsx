@@ -3,8 +3,8 @@ import { PropTypes } from 'prop-types';
 import Pictures from 'components/Picture';
 import SDropdownWindow from './style';
 
-function DropdownWindow({ title, content, Dropdown }) {
-  const [toggleDropdown, setToggleDropdown] = useState(Dropdown);
+function DropdownWindow({ title, content, idContent }) {
+  const [toggleDropdown, setToggleDropdown] = useState(true);
   const showToggleDropdown = () => setToggleDropdown(!toggleDropdown);
 
   return (
@@ -18,16 +18,18 @@ function DropdownWindow({ title, content, Dropdown }) {
           {title}
         </button>
       </div>
-      <p className={toggleDropdown ? 'hiddenDropdown' : 'dropdownContent'}>
-        {content}
-      </p>
-      <Pictures />
+      <div className="imageContent">
+        <p className={toggleDropdown ? 'hiddenDropdown' : 'dropdownContent'}>
+          {content}
+          <Pictures idContent={idContent} />
+        </p>
+      </div>
     </SDropdownWindow>
   );
 }
 DropdownWindow.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string.isRequired,
-  Dropdown: PropTypes.bool.isRequired,
+  idContent: PropTypes.string.isRequired,
 };
 export default DropdownWindow;
