@@ -8,47 +8,113 @@ export default function Menu() {
       <MenuBurger />
       <nav className="menu">
         <div className="dropDown">
-          <NavLink className="dropContent" to="/glaucoma">
-            Glaucome
-          </NavLink>
+          <div className="dropContent">Glaucome</div>
           <ul className="dropDownContent">
-            <li>En résumé</li>
-            <li>Les signes du glaucome</li>
-            <li>Les différentes formes de glaucome</li>
-            <li>Quels sont les facteurs de risques ?</li>
-            <li>La consultation dans la pathologie glaucomateuse</li>
-            <li>Le champ visuel en pratique</li>
-            <li>Les traitements</li>
-            <li>Les lasers</li>
-            <li>La chirurgie filtrante</li>
-            <li>FAQ : Comment instiller les collyres ? Que puis-je faire ?</li>
+            <li>
+              <NavLink to="/glaucomaSectionZero">En résumé</NavLink>
+            </li>
+            <li>
+              <NavLink to="/glaucomaSectionOne">Les signes du glaucome</NavLink>
+            </li>
+            <li>
+              <NavLink to="/glaucomaSectionTwo">
+                Les différentes formes de glaucome
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/glaucomaSectionThree">
+                Quels sont les facteurs de risques ?
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/glaucomaSectionFour">
+                La consultation dans la pathologie glaucomateuse
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/glaucomaSectionFive">
+                Le champ visuel en pratique
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/glaucomaSectionSix">Les traitements</NavLink>
+            </li>
+            <li>
+              <NavLink to="/glaucomaSectionSeven">Les lasers</NavLink>
+            </li>
+            <li>
+              <NavLink to="/glaucomaSectionEight">
+                La chirurgie filtrante
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/glaucomaSectionNine">
+                FAQ : Comment instiller les collyres ? Que puis-je faire ?
+              </NavLink>
+            </li>
           </ul>
         </div>
 
         <div className="dropDown">
-          <NavLink className="dropContent" to="/cataract">
-            Cataracte
-          </NavLink>
+          <div className="dropContent">Cataracte</div>
           <ul className="dropDownContent">
-            <li>La cataracte</li>
-            <li>L&apos;implant</li>
-            <li>Les implants multifocaux</li>
-            <li>La cataracte secondaire</li>
+            <li>
+              <NavLink to="/cataractSectionZero">La cataracte</NavLink>
+            </li>
+            <li>
+              <NavLink to="/cataractSectionOne">L&apos;implant</NavLink>
+            </li>
+            <li>
+              <NavLink to="/cataractSectionTwo">
+                Les implants multifocaux
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/cataractSectionThree">
+                La cataracte secondaire
+              </NavLink>
+            </li>
           </ul>
         </div>
 
         <div className="dropDown">
-          <NavLink className="dropContent" to="/refractive">
-            Chirurgie réfractive
-          </NavLink>
+          <div className="dropContent">Chirurgie réfractive</div>
           <ul className="dropDownContent">
-            <li>Quels sont les défauts de vision corrigés ?</li>
-            <li>Comment se déroule l’opération ?</li>
-            <li>Combien de temps dure la procédure ?</li>
-            <li>Est-ce que c’est douloureux ?</li>
-            <li>Quels sont les risques ?</li>
-            <li>Quels sont les effets indésirables ?</li>
-            <li>Combien coute la chirurgie LASIK, PKR… ?</li>
+            <li>
+              <NavLink to="/refractiveSectionZero">
+                Quels sont les défauts de vision corrigés ?
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/refractiveSectionOne">
+                Comment se déroule l’opération ?
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/refractiveSectionTwo">
+                Combien de temps dure la procédure ?
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/refractiveSectionThree">
+                Est-ce que c’est douloureux ?
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/refractiveSectionFour">
+                Quels sont les risques ?
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/refractiveSectionFive">
+                Quels sont les effets indésirables ?
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/refractiveSectionSix">
+                Combien coute la chirurgie LASIK, PKR… ?
+              </NavLink>
+            </li>
           </ul>
         </div>
 

@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
-import DropdownWindow from 'components/DropdownWindows';
 import { useLocation } from 'react-router-dom';
+import DropdownWindow from 'components/DropdownWindows';
 
 export default function Cataract() {
   const [cataracts, setCataracts] = useState([]);
