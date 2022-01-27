@@ -1,18 +1,39 @@
-import cataractContent from './content';
-import DropdownWindow from '../DropdownWindows/index';
+import axios from 'axios';
+import { useEffect, useState } from 'react';
+import DropdownWindow from 'components/DropdownWindows';
+import { useLocation } from 'react-router-dom';
 
-function Cataract() {
+export default function Cataract() {
+  const [cataracts, setCataracts] = useState([]);
+  useEffect(() => {
+    axios.get(`http://localhost:5050/contents`).then(({ data }) => {
+      setCataracts(data);
+    });
+  }, []);
+  const dicoPages = {
+    '/': 1,
+    '/glaucoma': 2,
+    '/cataract': 3,
+    '/refractive': 4,
+  };
+
+  const pagesUrl = useLocation().pathname;
   return (
     <>
-      {cataractContent.map((cataract) => (
-        <DropdownWindow
-          key={cataract.id}
-          title={cataract.title}
-          content={cataract.content}
-        />
-      ))}
+      {cataracts
+        .filter((data) => {
+          return parseInt(data.idPages, 10) === dicoPages[pagesUrl];
+        })
+        .map((cataract) => {
+          return (
+            <DropdownWindow
+              key={cataract.id}
+              title={cataract.title}
+              content={cataract.text}
+              idContent={cataract.id}
+            />
+          );
+        })}
     </>
   );
 }
-
-export default Cataract;
