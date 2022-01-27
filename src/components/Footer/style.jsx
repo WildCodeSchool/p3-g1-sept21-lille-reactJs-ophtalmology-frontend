@@ -5,8 +5,8 @@ const SFooter = styled.footer`
   display: flex;
   flex-flow: row wrap;
   color: white;
-  margin-top: 50px;
   padding: 20px;
+  margin-top: 50px;
 
   .footerLinks {
     width: 20%;
