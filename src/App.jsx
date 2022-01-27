@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Glaucoma from 'components/Glaucoma';
 import Header from './components/Header';
 import Menu from './components/Menu';
 import Home from './components/Home';
