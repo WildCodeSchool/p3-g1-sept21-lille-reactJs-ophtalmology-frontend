@@ -18,7 +18,10 @@ export default function Pictures({ idContent }) {
         })
         .map((picture) => {
           return (
-            <img src={picture.url || null} alt={picture.description || null} />
+            <img
+              src={`http://localhost:5050/${picture.url}` || null}
+              alt={picture.description || null}
+            />
           );
         })}
     </SPicture>

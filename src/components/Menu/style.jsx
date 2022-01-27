@@ -54,7 +54,11 @@ const SFormMenu = styled.div`
       min-width: 160px;
       box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     }
-    
+
+    .dropContent a{
+      text-decoration: none;
+      color: white;
+    }
     .dropDownContent a{
       text-decoration: none;
       color: black;
@@ -68,8 +72,11 @@ const SFormMenu = styled.div`
       text-align: left;
     }
 
+    .dropContent a:hover {
+      color: black;
+    }
+
     .dropDownContent a:hover {
-      background-color: #f1f1f1;
       text-decoration: underline;
     }
 
