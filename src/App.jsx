@@ -26,6 +26,7 @@ function App() {
           <Route path="/cataract" element={<Cataract />} />
           <Route path="refractive" element={<Refractive />} />
           <Route path="/about" element={<About />} />
+          <Route path="/videos" element={<VideoPage />} />
         </Routes>
         <CommentsArea />
         <Footer />
