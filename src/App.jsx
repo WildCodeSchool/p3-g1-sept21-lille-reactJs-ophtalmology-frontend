@@ -7,8 +7,10 @@ import Footer from './components/Footer';
 import CommentsArea from './components/CommentsArea';
 import Contact from './components/Contact';
 import About from './components/About';
+import Glaucoma from './components/Glaucoma';
 import Cataract from './components/Cataract';
 import Refractive from './components/Refractive';
+import VideoPage from './components/VideoPage';
 import './reset.css';
 import './App.css';
 
@@ -76,6 +78,7 @@ function App() {
             element={<Refractive state={6} />}
           />
           <Route path="/about" element={<About />} />
+          <Route path="/videos" element={<VideoPage />} />
         </Routes>
         <CommentsArea />
         <Footer />
