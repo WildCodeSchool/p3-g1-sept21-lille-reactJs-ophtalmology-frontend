@@ -9,114 +9,19 @@ export default function MenuBurger() {
         <Menu>
           <ul>
             <li>
-              <details>
-                <summary>Glaucome</summary>
-                <p>
-                  <NavLink to="/glaucomaSectionZero"> •En résumé</NavLink>
-                </p>
-                <p>
-                  <NavLink to="/glaucomaSectionOne">
-                    • Les signes du glaucome
-                  </NavLink>
-                </p>
-                <p>
-                  <NavLink to="/glaucomaSectionTwo">
-                    • Les différentes formes de glaucome
-                  </NavLink>
-                </p>
-                <p>
-                  <NavLink to="/glaucomaSectionThree">
-                    • Quels sont les facteurs de risques ?
-                  </NavLink>
-                </p>
-                <p>
-                  <NavLink to="/glaucomaSectionFour">
-                    • La consultation dans la pathologie glaucomateuse
-                  </NavLink>
-                </p>
-                <p>
-                  <NavLink to="/glaucomaSectionFive">
-                    • Le champ visuel en pratique
-                  </NavLink>
-                </p>
-                <p>
-                  <NavLink to="/glaucomaSectionSix">• Les traitements</NavLink>
-                </p>
-                <p>
-                  <NavLink to="/glaucomaSectionSeven">• Les lasers</NavLink>
-                </p>
-                <p>
-                  <NavLink to="/glaucomaSectionEight">
-                    • La chirurgie filtrante
-                  </NavLink>
-                </p>
-                <p>
-                  <NavLink to="/glaucomaSectionNine">
-                    • FAQ : Comment instiller les collyres ? Que puis-je faire ?
-                  </NavLink>
-                </p>
-              </details>
+              <NavLink to="/glaucoma" className="navLink">
+                Glaucome
+              </NavLink>
             </li>
             <li>
-              <details>
-                <summary>Cataracte</summary>
-                <p>
-                  <NavLink to="/cataractSectionZero">• La cataracte</NavLink>
-                </p>
-                <p>
-                  <NavLink to="/cataractSectionOne">• L&apos;implant</NavLink>
-                </p>
-                <p>
-                  <NavLink to="/cataractSectionTwo">
-                    • Les implants multifocaux
-                  </NavLink>
-                </p>
-                <p>
-                  <NavLink to="/cataractSectionThree">
-                    • La cataracte secondaire
-                  </NavLink>
-                </p>
-              </details>
+              <NavLink to="/cataract" className="navLink">
+                Cataracte
+              </NavLink>
             </li>
             <li>
-              <details>
-                <summary>• Chirurgie réfractive</summary>
-                <p>
-                  <NavLink to="/refractiveSectionZero">
-                    • Quels sont les défauts de vision corrigés ?
-                  </NavLink>
-                </p>
-                <p>
-                  <NavLink to="/refractiveSectionOne">
-                    • Comment se déroule l’opération ?
-                  </NavLink>
-                </p>
-                <p>
-                  <NavLink to="/refractiveSectionTwo">
-                    • Combien de temps dure la procédure ?
-                  </NavLink>
-                </p>
-                <p>
-                  <NavLink to="/refractiveSectionThree">
-                    • Est-ce que c’est douloureux ?
-                  </NavLink>
-                </p>
-                <p>
-                  <NavLink to="/refractiveSectionFour">
-                    • Quels sont les risques ?
-                  </NavLink>
-                </p>
-                <p>
-                  <NavLink to="/refractiveSectionFive">
-                    • Quels sont les effets indésirables ?
-                  </NavLink>
-                </p>
-                <p>
-                  <NavLink to="/refractiveSectionSix">
-                    • Combien coute la chirurgie LASIK, PKR… ?
-                  </NavLink>
-                </p>
-              </details>
+              <NavLink to="/refractive" className="navLink">
+                Chirurgie réfractive
+              </NavLink>
             </li>
             <li>
               <details>

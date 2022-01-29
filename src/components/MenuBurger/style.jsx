@@ -61,6 +61,16 @@ const SFormMenuBurger = styled.div`
       border-radius: 4px;
       padding: 0.5em 0.5em 0;
     }
+
+    .navLink {
+      border: 1px solid #aaa;
+      border-radius: 4px;
+      padding: 0.5em 0.5em 0.5em;
+      display: flex;
+      color: white;
+      text-decoration: none;
+    }
+
     details p {
       margin: 15px;
     }
