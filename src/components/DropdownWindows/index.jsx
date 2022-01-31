@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import { PropTypes } from 'prop-types';
-import Pictures from 'components/Picture';
 import SDropdownWindow from './style';
 
-function DropdownWindow({ title, content, idContent }) {
+function DropdownWindow({ title, content }) {
   const [toggleDropdown, setToggleDropdown] = useState(true);
   const showToggleDropdown = () => setToggleDropdown(!toggleDropdown);
+  const newTexts = content.split('/break/');
 
   return (
     <SDropdownWindow>
@@ -19,10 +19,9 @@ function DropdownWindow({ title, content, idContent }) {
         </button>
       </div>
       <div className="imageContent">
-        <p className={toggleDropdown ? 'hiddenDropdown' : 'dropdownContent'}>
-          {content}
-          <Pictures idContent={idContent} />
-        </p>
+        {newTexts.map((newText) => {
+          return <p> {newText}</p>;
+        })}
       </div>
     </SDropdownWindow>
   );
@@ -30,6 +29,5 @@ function DropdownWindow({ title, content, idContent }) {
 DropdownWindow.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string.isRequired,
-  idContent: PropTypes.string.isRequired,
 };
 export default DropdownWindow;

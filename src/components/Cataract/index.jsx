@@ -10,6 +10,7 @@ export default function Cataract() {
       setCataracts(data);
     });
   }, []);
+  console.log(cataracts);
   const dicoPages = {
     '/': 1,
     '/glaucoma': 2,
