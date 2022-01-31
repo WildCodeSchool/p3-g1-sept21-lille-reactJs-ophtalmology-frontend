@@ -72,7 +72,7 @@ const SFormMenu = styled.div`
       text-align: left;
     }
 
-    .dropContent a:hover {
+    .dropContent:hover > a {
       color: black;
     }
 
