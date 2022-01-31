@@ -6,7 +6,7 @@ import { useLocation } from 'react-router-dom';
 export default function Refractive() {
   const [refractives, setRefractives] = useState([]);
   useEffect(() => {
-    axios.get(`http://localhost:5050/contents`).then(({ data }) => {
+    axios.get(`${process.env.REACT_APP_API_URL}/contents`).then(({ data }) => {
       setRefractives(data);
     });
   }, []);
