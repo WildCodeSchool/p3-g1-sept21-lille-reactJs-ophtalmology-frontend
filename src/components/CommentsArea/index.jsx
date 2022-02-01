@@ -17,7 +17,6 @@ function CommentsArea() {
         setCommentList(data);
       })
       .catch((err) => {
-        setCommentList('Cette page ne contient pas encore de commentaires.');
         console.log(err);
       });
   }, []);
