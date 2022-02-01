@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import { toast } from 'react-toastify';
 import doctorAvatar from '../../assets/doctorAvatar.png';
 import userAvatar from '../../assets/userAvatar.png';
 import SComments from './commentsStyle';
@@ -16,9 +17,18 @@ function CommentsArea() {
       .then((data) => {
         setCommentList(data);
       })
-      .catch((err) => {
+      .catch(() => {
         setCommentList('Cette page ne contient pas encore de commentaires.');
-        console.log(err);
+        toast.error('Une erreur est survenue !', {
+          position: 'top-center',
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: 'colored',
+        });
       });
   }, []);
 
@@ -83,7 +93,18 @@ function CommentsArea() {
           },
         ])
       )
-      .catch((err) => console.log(err));
+      .catch(() =>
+        toast.error('Une erreur est survenue !', {
+          position: 'top-center',
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: 'colored',
+        })
+      );
   };
 
   return (
@@ -148,6 +169,7 @@ function CommentsArea() {
             placeholder="Votre message"
             value={messageChange}
             onChange={onMessageChange}
+            required
           />
           <div className="btnDiv">
             <input className="sendBtn" type="submit" value="ENVOYER" />

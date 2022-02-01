@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { toast } from 'react-toastify';
 import { PropTypes } from 'prop-types';
 import Pictures from 'components/Picture';
 import axios from 'axios';
@@ -9,9 +10,23 @@ function DropdownWindow({ title, content, idContent }) {
   const showToggleDropdown = () => setToggleDropdown(!toggleDropdown);
   const [pictures, setPictures] = useState([]);
   useEffect(() => {
-    axios.get(`http://localhost:5050/images`).then(({ data }) => {
-      setPictures(data);
-    });
+    axios
+      .get(`${process.env.REACT_APP_API_URL}/images`)
+      .then(({ data }) => {
+        setPictures(data);
+      })
+      .catch(() => {
+        toast.error('Une erreur est survenue !', {
+          position: 'top-center',
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: 'colored',
+        });
+      });
   }, []);
   return (
     <SDropdownWindow>
