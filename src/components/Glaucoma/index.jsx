@@ -6,7 +6,7 @@ import { useLocation } from 'react-router-dom';
 export default function Glaucoma() {
   const [glaucomas, setGlaucomas] = useState([]);
   useEffect(() => {
-    axios.get(`http://localhost:5050/contents`).then(({ data }) => {
+    axios.get(`${process.env.REACT_APP_API_URL}/contents`).then(({ data }) => {
       setGlaucomas(data);
     });
   }, []);
