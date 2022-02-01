@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import { toast } from 'react-toastify';
 import SVideoPage from './style';
 
 function VideoPage() {
@@ -11,9 +12,18 @@ function VideoPage() {
       .then((data) => {
         setVideoList(data);
       })
-      .catch((err) => {
+      .catch(() => {
         setVideoList('Cette page ne contient pas encore de videos.');
-        console.log(err);
+        toast.error('Une erreur est survenue !', {
+          position: 'top-center',
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: 'colored',
+        });
       });
   }, []);
   return (
