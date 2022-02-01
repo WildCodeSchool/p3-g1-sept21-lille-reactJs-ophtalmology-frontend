@@ -1,12 +1,19 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { PropTypes } from 'prop-types';
+import Pictures from 'components/Picture';
+import axios from 'axios';
 import SDropdownWindow from './style';
 
 function DropdownWindow({ title, content }) {
   const [toggleDropdown, setToggleDropdown] = useState(true);
   const showToggleDropdown = () => setToggleDropdown(!toggleDropdown);
   const newTexts = content.split('/break/');
-
+  const [pictures, setPictures] = useState([]);
+  useEffect(() => {
+    axios.get(`http://localhost:5050/images`).then(({ data }) => {
+      setPictures(data);
+    });
+  }, []);
   return (
     <SDropdownWindow>
       <div className="windowTitle">
@@ -19,9 +26,26 @@ function DropdownWindow({ title, content }) {
         </button>
       </div>
       <div className="imageContent">
-        {newTexts.map((newText) => {
-          return <p> {newText}</p>;
-        })}
+        <div className={toggleDropdown ? 'hiddenDropdown' : 'dropdownContent'}>
+          {newTexts.map((newText) => {
+            return <p> {newText}</p>;
+          })}
+          <div className="pictureDisplay">
+            {pictures
+              .filter((picture) => {
+                return picture.idContents === idContent;
+              })
+              .map((picture) => {
+                return (
+                  <Pictures
+                    idContent={idContent}
+                    imgUrl={picture.url}
+                    imgDesc={picture.description}
+                  />
+                );
+              })}
+          </div>
+        </div>
       </div>
     </SDropdownWindow>
   );
