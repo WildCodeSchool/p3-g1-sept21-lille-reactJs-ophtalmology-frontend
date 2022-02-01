@@ -4,9 +4,10 @@ import Pictures from 'components/Picture';
 import axios from 'axios';
 import SDropdownWindow from './style';
 
-function DropdownWindow({ title, content, idContent }) {
+function DropdownWindow({ title, content }) {
   const [toggleDropdown, setToggleDropdown] = useState(true);
   const showToggleDropdown = () => setToggleDropdown(!toggleDropdown);
+  const newTexts = content.split('/break/');
   const [pictures, setPictures] = useState([]);
   useEffect(() => {
     axios.get(`http://localhost:5050/images`).then(({ data }) => {
@@ -26,7 +27,9 @@ function DropdownWindow({ title, content, idContent }) {
       </div>
       <div className="imageContent">
         <div className={toggleDropdown ? 'hiddenDropdown' : 'dropdownContent'}>
-          <p>{content}</p>
+          {newTexts.map((newText) => {
+            return <p> {newText}</p>;
+          })}
           <div className="pictureDisplay">
             {pictures
               .filter((picture) => {
@@ -50,6 +53,5 @@ function DropdownWindow({ title, content, idContent }) {
 DropdownWindow.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string.isRequired,
-  idContent: PropTypes.string.isRequired,
 };
 export default DropdownWindow;
