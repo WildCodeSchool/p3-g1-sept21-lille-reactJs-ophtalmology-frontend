@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { toast } from 'react-toastify';
 import { useEffect, useState } from 'react';
 import DropdownWindow from 'components/DropdownWindows';
 import { useLocation } from 'react-router-dom';
@@ -6,9 +7,23 @@ import { useLocation } from 'react-router-dom';
 export default function Refractive() {
   const [refractives, setRefractives] = useState([]);
   useEffect(() => {
-    axios.get(`${process.env.REACT_APP_API_URL}/contents`).then(({ data }) => {
-      setRefractives(data);
-    });
+    axios
+      .get(`${process.env.REACT_APP_API_URL}/contents`)
+      .then(({ data }) => {
+        setRefractives(data);
+      })
+      .catch(() => {
+        toast.error('Une erreur est survenue !', {
+          position: 'top-center',
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: 'colored',
+        });
+      });
   }, []);
   const dicoPages = {
     '/': 1,
