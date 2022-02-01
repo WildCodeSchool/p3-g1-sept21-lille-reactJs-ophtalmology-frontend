@@ -5,6 +5,7 @@ const SDropdownWindow = styled.section`
   padding: 10px;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
 
   .dropdownBtn {
@@ -35,6 +36,12 @@ const SDropdownWindow = styled.section`
     line-height: 22px;
     margin: auto;
   }
+  .pictureDisplay {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
 
   @media only screen and (min-width: 700px) {
     width: 100vw;
@@ -47,6 +54,11 @@ const SDropdownWindow = styled.section`
       width: 74vw;
       height: auto;
       line-height: 26px;
+    }
+    .pictureDisplay {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-evenly;
     }
     button {
       cursor: pointer;

@@ -1,33 +1,25 @@
-import axios from 'axios';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { PropTypes } from 'prop-types';
 import SPicture from './style';
 
-export default function Pictures({ idContent }) {
-  const [pictures, setPictures] = useState([]);
-  useEffect(() => {
-    axios.get(`http://localhost:5050/images`).then(({ data }) => {
-      setPictures(data);
-    });
-  }, []);
+export default function Pictures({ imgUrl, imgDesc }) {
+  const [urlCheck] = useState(imgUrl.indexOf('http'));
   return (
     <SPicture>
-      {pictures
-        .filter((picture) => {
-          return picture.idContents === idContent;
-        })
-        .map((picture) => {
-          return (
-            <img
-              src={`http://localhost:5050/${picture.url}` || null}
-              alt={picture.description || null}
-            />
-          );
-        })}
+      <img
+        src={
+          urlCheck !== -1
+            ? imgUrl || null
+            : `${process.env.REACT_APP_API_URL}/${imgUrl}` || null
+        }
+        alt={imgDesc || null}
+      />
+      <p>{imgDesc || null}</p>
     </SPicture>
   );
 }
 
 Pictures.propTypes = {
-  idContent: PropTypes.string.isRequired,
+  imgUrl: PropTypes.string.isRequired,
+  imgDesc: PropTypes.string.isRequired,
 };
