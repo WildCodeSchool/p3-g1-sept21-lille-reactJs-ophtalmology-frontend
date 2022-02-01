@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
 import Glaucoma from './components/Glaucoma';
 import Header from './components/Header';
 import Menu from './components/Menu';
@@ -12,6 +13,7 @@ import Refractive from './components/Refractive';
 import VideoPage from './components/VideoPage';
 import './reset.css';
 import './App.css';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
@@ -29,6 +31,7 @@ function App() {
           <Route path="/videos" element={<VideoPage />} />
         </Routes>
         <CommentsArea />
+        <ToastContainer />
         <Footer />
       </BrowserRouter>
     </>
