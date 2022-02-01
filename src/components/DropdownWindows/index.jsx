@@ -53,6 +53,6 @@ function DropdownWindow({ title, content, idContent }) {
 DropdownWindow.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string.isRequired,
-  idContent: PropTypes.string.isRequired,
+  idContent: PropTypes.number.isRequired,
 };
 export default DropdownWindow;
