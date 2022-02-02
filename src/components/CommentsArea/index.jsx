@@ -18,7 +18,6 @@ function CommentsArea() {
         setCommentList(data);
       })
       .catch(() => {
-        setCommentList('Cette page ne contient pas encore de commentaires.');
         toast.error('Une erreur est survenue !', {
           position: 'top-center',
           autoClose: 5000,

@@ -5,7 +5,7 @@ import Pictures from 'components/Picture';
 import axios from 'axios';
 import SDropdownWindow from './style';
 
-function DropdownWindow({ title, content }) {
+function DropdownWindow({ title, content, idContent }) {
   const [toggleDropdown, setToggleDropdown] = useState(true);
   const showToggleDropdown = () => setToggleDropdown(!toggleDropdown);
   const newTexts = content.split('/break/');
@@ -43,7 +43,7 @@ function DropdownWindow({ title, content }) {
       <div className="imageContent">
         <div className={toggleDropdown ? 'hiddenDropdown' : 'dropdownContent'}>
           {newTexts.map((newText) => {
-            return <p> {newText}</p>;
+            return newText === '' ? <br /> : <p>{newText}</p>;
           })}
           <div className="pictureDisplay">
             {pictures
@@ -68,5 +68,6 @@ function DropdownWindow({ title, content }) {
 DropdownWindow.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string.isRequired,
+  idContent: PropTypes.number.isRequired,
 };
 export default DropdownWindow;
