@@ -29,6 +29,9 @@ export default function MenuBurger() {
                 <p>
                   <NavLink to="/about">• Présentation</NavLink>
                 </p>
+                <p>
+                  <NavLink to="/videos">• Mes vidéos</NavLink>
+                </p>
                 <p>• Actualités</p>
                 <p>• Informations pratiques</p>
                 <p>

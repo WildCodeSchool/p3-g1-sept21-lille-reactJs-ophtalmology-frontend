@@ -3,6 +3,7 @@ import { toast } from 'react-toastify';
 import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import DropdownWindow from 'components/DropdownWindows';
+import CommentsArea from '../CommentsArea';
 
 export default function Cataract() {
   const [cataracts, setCataracts] = useState([]);
@@ -49,6 +50,7 @@ export default function Cataract() {
             />
           );
         })}
+      <CommentsArea />
     </>
   );
 }
