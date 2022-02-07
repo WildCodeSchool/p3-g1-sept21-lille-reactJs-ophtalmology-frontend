@@ -4,7 +4,6 @@ import { useLocation } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import doctorAvatar from '../../assets/doctorAvatar.png';
 import userAvatar from '../../assets/userAvatar.png';
-import SComments from './commentsStyle';
 import SCommentsArea from './style';
 
 function CommentsArea() {
@@ -111,46 +110,43 @@ function CommentsArea() {
       <form className="commentSection" onSubmit={handleSubmit}>
         <h3>Mes échanges avec les internautes</h3>
 
-        <SComments>
-          <ul>
-            {commentList
-              .filter((data) => {
-                return parseInt(data.idPages, 10) === dicoPages[pageUrl];
-              })
-              .map((comments) => (
-                <li
-                  key={comments.id}
-                  authorName={comments.authorName}
-                  message={comments.message}
-                  date={comments.date}
-                  idPages={comments.idPages}
-                  idParent={comments.idParent}
-                  className={
-                    comments.idParent == null
-                      ? `comment userComment`
-                      : `comment answerComment`
-                  }
-                >
-                  <div className="avatarContainer">
-                    <img
-                      className="avatars"
-                      src={
-                        comments.idParent == null ? userAvatar : doctorAvatar
-                      }
-                      alt="User Avatar"
-                    />
+        <ul>
+          {commentList
+            .filter((data) => {
+              return parseInt(data.idPages, 10) === dicoPages[pageUrl];
+            })
+            .map((comments) => (
+              <li
+                key={comments.id}
+                authorName={comments.authorName}
+                message={comments.message}
+                date={comments.date}
+                idPages={comments.idPages}
+                idParent={comments.idParent}
+                className={
+                  comments.idParent == null
+                    ? `comment userComment`
+                    : `comment answerComment`
+                }
+              >
+                <div className="avatarContainer">
+                  <img
+                    className="avatars"
+                    src={comments.idParent == null ? userAvatar : doctorAvatar}
+                    alt="User Avatar"
+                  />
+                </div>
+                <div className="infoContainer">
+                  <p className="nameDisplay">{comments.authorName}</p>
+                  <div className="dateContainer">
+                    <p className="dateDisplay">Publié le {comments.date}</p>
                   </div>
-                  <div className="infoContainer">
-                    <p className="nameDisplay">{comments.authorName}</p>
-                    <div className="dateContainer">
-                      <p className="dateDisplay">Publié le {comments.date}</p>
-                    </div>
-                    <p className="messageDisplay">{comments.message}</p>
-                  </div>
-                </li>
-              ))}
-          </ul>
-        </SComments>
+                  <p className="messageDisplay">{comments.message}</p>
+                </div>
+              </li>
+            ))}
+        </ul>
+
         <h5>Laissez votre commentaire</h5>
         <div className="writeComment">
           <p className="inputTitle">Nom</p>
