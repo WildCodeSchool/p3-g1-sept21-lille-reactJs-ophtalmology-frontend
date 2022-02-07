@@ -8,7 +8,7 @@ const SCommentsArea = styled.section`
     flex-direction: column;
     background-color: #f3f2f2;
     padding: 10px 0;
-    margin: auto;
+    margin: 50px 0 -50px 0;
 
     .commentSection {
       width: 90%;
