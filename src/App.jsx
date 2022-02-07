@@ -5,7 +5,6 @@ import Header from './components/Header';
 import Menu from './components/Menu';
 import Home from './components/Home';
 import Footer from './components/Footer';
-import CommentsArea from './components/CommentsArea';
 import Contact from './components/Contact';
 import About from './components/About';
 import Cataract from './components/Cataract';
@@ -30,7 +29,6 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/videos" element={<VideoPage />} />
         </Routes>
-        <CommentsArea />
         <ToastContainer />
         <Footer />
       </BrowserRouter>

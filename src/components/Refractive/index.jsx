@@ -3,6 +3,7 @@ import { toast } from 'react-toastify';
 import { useEffect, useState } from 'react';
 import DropdownWindow from 'components/DropdownWindows';
 import { useLocation } from 'react-router-dom';
+import CommentsArea from '../CommentsArea';
 
 export default function Refractive() {
   const [refractives, setRefractives] = useState([]);
@@ -49,6 +50,7 @@ export default function Refractive() {
             />
           );
         })}
+      <CommentsArea />
     </>
   );
 }
