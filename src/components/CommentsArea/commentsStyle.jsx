@@ -54,7 +54,7 @@ const SComments = styled.section`
       line-height: 20px;
     }
   }
-  @media only screen and (max-width: 926px) {
+  @media only screen and (max-width: 700px) {
     padding: 10px 0;
 
     .comment {
