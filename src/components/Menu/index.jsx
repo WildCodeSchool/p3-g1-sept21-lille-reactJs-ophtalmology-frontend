@@ -34,13 +34,9 @@ export default function Menu() {
             <li>
               <NavLink to="/videos">Mes vidéos</NavLink>
             </li>
-            <li>Actualités</li>
-            <li>Informations pratiques</li>
             <li>
               <NavLink to="/contact">Contact</NavLink>
             </li>
-            <li>Liens utiles</li>
-            <li>FAQ générale</li>
           </ul>
         </div>
       </nav>
