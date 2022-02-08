@@ -27,18 +27,11 @@ export default function MenuBurger() {
               <details>
                 <summary>&nbsp;À propos</summary>
                 <p>
-                  <NavLink to="/about">• Présentation</NavLink>
-                </p>
-                <p>
                   <NavLink to="/videos">• Mes vidéos</NavLink>
                 </p>
-                <p>• Actualités</p>
-                <p>• Informations pratiques</p>
                 <p>
                   <NavLink to="/contact">• Contact</NavLink>
                 </p>
-                <p>• Liens utiles</p>
-                <p>• FAQ générale</p>
               </details>
             </li>
           </ul>
