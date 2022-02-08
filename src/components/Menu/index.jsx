@@ -29,9 +29,6 @@ export default function Menu() {
           <div className="dropContent">À propos</div>
           <ul className="dropDownContent">
             <li>
-              <NavLink to="/about">Présentation</NavLink>
-            </li>
-            <li>
               <NavLink to="/videos">Mes vidéos</NavLink>
             </li>
             <li>
