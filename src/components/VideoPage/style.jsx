@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 const SVideoPage = styled.section`
   display: flex;
+  min-height: 70vh;
   .videoList {
     display: flex;
     flex-direction: column;

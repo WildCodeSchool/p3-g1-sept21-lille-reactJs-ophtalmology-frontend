@@ -5,7 +5,6 @@ const SEye = styled.section`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  border-radius: 2vh;
   margin: 30px auto;
   img {
     justify-content: center;

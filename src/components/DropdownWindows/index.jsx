@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import { toast } from 'react-toastify';
 import { PropTypes } from 'prop-types';
-import Pictures from 'components/Picture';
 import axios from 'axios';
+import Pictures from '../Picture';
 import SDropdownWindow from './style';
 
 function DropdownWindow({ title, content, idContent }) {

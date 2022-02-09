@@ -36,7 +36,7 @@ const SFormMenu = styled.div`
       color: black;
       height: 52px;
       justify-content: center;
-      align-items:center;
+      align-items: center;
     }
 
     li.dropDown {
@@ -55,15 +55,15 @@ const SFormMenu = styled.div`
       box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     }
 
-    .dropContent a{
+    .dropContent a {
       text-decoration: none;
       color: white;
     }
-    .dropDownContent a{
+    .dropDownContent a {
       text-decoration: none;
       color: black;
     }
-    
+
     .dropDownContent > li {
       color: black;
       padding: 12px 16px;
@@ -85,8 +85,9 @@ const SFormMenu = styled.div`
     }
   }
   @media only screen and (max-width: 926px) {
-    .menu{
+    .menu {
       display: none;
     }
+  }
 `;
 export default SFormMenu;
