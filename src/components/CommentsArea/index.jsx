@@ -139,7 +139,10 @@ function CommentsArea() {
                 <div className="infoContainer">
                   <p className="nameDisplay">{comments.authorName}</p>
                   <div className="dateContainer">
-                    <p className="dateDisplay">Publié le {comments.date}</p>
+                    <p className="dateDisplay">
+                      Publié le {comments.date.split('T')[0]} à{' '}
+                      {comments.date.split('T')[1].split('.')[0]}
+                    </p>
                   </div>
                   <p className="messageDisplay">{comments.message}</p>
                 </div>
