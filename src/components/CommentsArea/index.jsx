@@ -87,7 +87,6 @@ function CommentsArea() {
             authorName: form.authorName,
             idPages: form.idPages,
             idParent: form.idParent,
-            date: Date.now(),
           },
         ])
       )
@@ -113,40 +112,90 @@ function CommentsArea() {
         <ul>
           {commentList
             .filter((data) => {
-              return parseInt(data.idPages, 10) === dicoPages[pageUrl];
+              return (
+                parseInt(data.idPages, 10) === dicoPages[pageUrl] &&
+                data.idParent === null
+              );
             })
             .map((comments) => (
-              <li
-                key={comments.id}
-                authorName={comments.authorName}
-                message={comments.message}
-                date={comments.date}
-                idPages={comments.idPages}
-                idParent={comments.idParent}
-                className={
-                  comments.idParent == null
-                    ? `comment userComment`
-                    : `comment answerComment`
-                }
-              >
-                <div className="avatarContainer">
-                  <img
-                    className="avatars"
-                    src={comments.idParent == null ? userAvatar : doctorAvatar}
-                    alt="User Avatar"
-                  />
-                </div>
-                <div className="infoContainer">
-                  <p className="nameDisplay">{comments.authorName}</p>
-                  <div className="dateContainer">
-                    <p className="dateDisplay">
-                      Publié le {comments.date.split('T')[0]} à{' '}
-                      {comments.date.split('T')[1].split('.')[0]}
-                    </p>
+              <>
+                <li
+                  key={comments.id}
+                  authorName={comments.authorName}
+                  message={comments.message}
+                  date={comments.date}
+                  idPages={comments.idPages}
+                  idParent={comments.idParent}
+                  className={
+                    comments.idParent == null
+                      ? `comment userComment`
+                      : `comment answerComment`
+                  }
+                >
+                  <div className="avatarContainer">
+                    <img
+                      className="avatars"
+                      src={
+                        comments.idParent == null ? userAvatar : doctorAvatar
+                      }
+                      alt="User Avatar"
+                    />
                   </div>
-                  <p className="messageDisplay">{comments.message}</p>
-                </div>
-              </li>
+                  <div className="infoContainer">
+                    <p className="nameDisplay">{comments.authorName}</p>
+                    <div className="dateContainer">
+                      <p className="dateDisplay">
+                        {comments.date
+                          ? `Publié le ${comments.date.split('T')[0]} à
+                      ${comments.date.split('T')[1].split('.')[0]}`
+                          : ''}
+                      </p>
+                    </div>
+                    <p className="messageDisplay">{comments.message}</p>
+                  </div>
+                </li>
+                {commentList
+                  .filter((data) => {
+                    return data.idParent === comments.id;
+                  })
+                  .map((answer) => (
+                    <li
+                      key={answer.id}
+                      authorName={answer.authorName}
+                      message={answer.message}
+                      date={answer.date}
+                      idPages={answer.idPages}
+                      idParent={answer.idParent}
+                      className={
+                        answer.idParent == null
+                          ? `comment userComment`
+                          : `comment answerComment`
+                      }
+                    >
+                      <div className="avatarContainer">
+                        <img
+                          className="avatars"
+                          src={
+                            answer.idParent == null ? userAvatar : doctorAvatar
+                          }
+                          alt="User Avatar"
+                        />
+                      </div>
+                      <div className="infoContainer">
+                        <p className="nameDisplay">{answer.authorName}</p>
+                        <div className="dateContainer">
+                          <p className="dateDisplay">
+                            {answer.date
+                              ? `Publié le ${answer.date.split('T')[0]} à
+                                  ${answer.date.split('T')[1].split('.')[0]}`
+                              : ''}
+                          </p>
+                        </div>
+                        <p className="messageDisplay">{answer.message}</p>
+                      </div>
+                    </li>
+                  ))}
+              </>
             ))}
         </ul>
 
