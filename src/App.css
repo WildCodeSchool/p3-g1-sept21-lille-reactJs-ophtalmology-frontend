@@ -8,4 +8,5 @@
   --mFont: 'Gotham Rounded', sans-serif;
 
   font-family: var(--mFont);
+  overflow-x: hidden;
 }
